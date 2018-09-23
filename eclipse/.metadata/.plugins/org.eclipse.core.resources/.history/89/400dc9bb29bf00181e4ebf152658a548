@@ -1,0 +1,10 @@
+//package org.apache.logging.log4j;
+package net.minecraft.client.util;
+
+import org.apache.logging.log4j.LogManager;
+
+public class Logger {
+	public static final Logger LOGGER = LogManager.getLogger();
+	
+	public 
+}

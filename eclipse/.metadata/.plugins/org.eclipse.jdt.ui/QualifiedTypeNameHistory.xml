@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.toasts.SystemToast"/>
+<fullyQualifiedTypeName name="net.minecraft.command.CommandException"/>
+<fullyQualifiedTypeName name="net.minecraft.client.gui.toasts.GuiToast.ToastInstance"/>
+<fullyQualifiedTypeName name="net.minecraft.util.text.ITextComponent"/>
+<fullyQualifiedTypeName name="net.minecraft.util.text.TextComponentString"/>
+</qualifiedTypeNameHistroy>

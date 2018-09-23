@@ -1,0 +1,120 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 9/2/18 8:32 PM
+Description: Exception generating new chunk
+
+java.lang.OutOfMemoryError: Java heap space
+	at net.minecraft.world.gen.layer.IntCache.getIntCache(IntCache.java:20)
+	at net.minecraft.world.gen.layer.GenLayerVoronoiZoom.getInts(GenLayerVoronoiZoom.java:86)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:146)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:97)
+	at net.minecraft.world.biome.BiomeCache.getBiomeCacheBlock(BiomeCache.java:36)
+	at net.minecraft.world.biome.BiomeCache.getCachedBiomes(BiomeCache.java:83)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:140)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:123)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.provideChunk(ChunkGeneratorOverworld.java:184)
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:121)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:354)
+	at net.minecraft.world.World.getChunkFromBlockCoords(World.java:346)
+	at net.minecraft.world.World.getBlockState(World.java:947)
+	at net.minecraft.world.Explosion.doExplosionA(Explosion.java:103)
+	at net.minecraft.world.WorldServer.newExplosion(WorldServer.java:1218)
+	at net.minecraft.world.World.createExplosion(World.java:2287)
+	at net.minecraft.entity.item.EntityTNTPrimed.explode(EntityTNTPrimed.java:116)
+	at net.minecraft.entity.item.EntityTNTPrimed.onUpdate(EntityTNTPrimed.java:103)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:852)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:627)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:792)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.gen.layer.IntCache.getIntCache(IntCache.java:20)
+	at net.minecraft.world.gen.layer.GenLayerVoronoiZoom.getInts(GenLayerVoronoiZoom.java:86)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:146)
+	at net.minecraft.world.biome.BiomeCache$Block.<init>(BiomeCache.java:97)
+	at net.minecraft.world.biome.BiomeCache.getBiomeCacheBlock(BiomeCache.java:36)
+	at net.minecraft.world.biome.BiomeCache.getCachedBiomes(BiomeCache.java:83)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:140)
+	at net.minecraft.world.biome.BiomeProvider.getBiomes(BiomeProvider.java:123)
+	at net.minecraft.world.gen.ChunkGeneratorOverworld.provideChunk(ChunkGeneratorOverworld.java:184)
+
+-- Chunk to be generated --
+Details:
+	Location: -55,108
+	Position hash: 468151435209
+	Generator: net.minecraft.world.gen.ChunkGeneratorOverworld@f3de665
+Stacktrace:
+	at net.minecraft.world.gen.ChunkProviderServer.provideChunk(ChunkProviderServer.java:121)
+	at net.minecraft.world.World.getChunkFromChunkCoords(World.java:354)
+	at net.minecraft.world.World.getChunkFromBlockCoords(World.java:346)
+	at net.minecraft.world.World.getBlockState(World.java:947)
+	at net.minecraft.world.Explosion.doExplosionA(Explosion.java:103)
+	at net.minecraft.world.WorldServer.newExplosion(WorldServer.java:1218)
+	at net.minecraft.world.World.createExplosion(World.java:2287)
+	at net.minecraft.entity.item.EntityTNTPrimed.explode(EntityTNTPrimed.java:116)
+	at net.minecraft.entity.item.EntityTNTPrimed.onUpdate(EntityTNTPrimed.java:103)
+	at net.minecraft.world.World.updateEntityWithOptionalForce(World.java:1987)
+	at net.minecraft.world.WorldServer.updateEntityWithOptionalForce(WorldServer.java:852)
+	at net.minecraft.world.World.updateEntity(World.java:1951)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:tnt (net.minecraft.entity.item.EntityTNTPrimed)
+	Entity ID: 21013
+	Entity Name: Block of TNT
+	Entity's Exact location: 312.51, 40.00, 122.51
+	Entity's Block location: World: (312,40,122), Chunk: (at 8,2,10 in 19,7; contains blocks 304,0,112 to 319,255,127), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+	Entity's Momentum: 0.00, -0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: ~~ERROR~~ NullPointerException: null
+Stacktrace:
+	at net.minecraft.world.World.updateEntities(World.java:1794)
+	at net.minecraft.world.WorldServer.updateEntities(WorldServer.java:627)
+
+-- Affected level --
+Details:
+	Level name: mcpworld
+	All players: 1 total; [EntityPlayerMP['Player992'/24, l='mcpworld', x=309.47, y=63.44, z=123.40]]
+	Chunk stats: ServerChunkCache: 6662 Drop: 0
+	Level seed: -1587754402
+	Level generator: ID 02 - largeBiomes, ver 0. Features enabled: true
+	Level generator options: 
+	Level spawn location: World: (584,64,166), Chunk: (at 8,4,6 in 36,10; contains blocks 576,0,160 to 591,255,175), Region: (1,0; contains chunks 32,0 to 63,31, blocks 512,0,0 to 1023,255,511)
+	Level time: 82047 game time, 1000 day time
+	Level dimension: 0
+	Level storage version: 0x04ABD - Anvil
+	Level weather: Rain time: 72880 (now: false), thunder time: 17953 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:792)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:702)
+	at net.minecraft.server.integrated.IntegratedServer.tick(IntegratedServer.java:175)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:565)
+	at java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_181, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 9999928 bytes (9 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	IntCache: cache: 0, tcache: 0, allocated: 13, tallocated: 98
+	Profiler Position: N/A (disabled)
+	Player Count: 1 / 8; [EntityPlayerMP['Player992'/24, l='mcpworld', x=309.47, y=63.44, z=123.40]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated

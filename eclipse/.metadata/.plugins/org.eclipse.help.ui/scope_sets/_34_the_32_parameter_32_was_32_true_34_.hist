@@ -1,0 +1,4 @@
+#Sun Sep 02 00:36:22 CEST 2018
+__DEFAULT__=false
+org.eclipse.help.ui.localSearch.master=true
+expression="the parameter was true"
