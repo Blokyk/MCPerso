@@ -257,7 +257,7 @@ public abstract class CommandBase implements ICommand
 
     public static List<EntityPlayerMP> func_193513_a(MinecraftServer p_193513_0_, ICommandSender p_193513_1_, String p_193513_2_) throws CommandException
     {
-        List<EntityPlayerMP> list = EntitySelector.func_193531_b(p_193513_1_, p_193513_2_);
+        List<EntityPlayerMP> list = EntitySelector.matchEntities(p_193513_1_, p_193513_2_);
         return (List<EntityPlayerMP>)(list.isEmpty() ? Lists.newArrayList(func_193512_a(p_193513_0_, (EntityPlayerMP)null, p_193513_2_)) : list);
     }
 
