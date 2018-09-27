@@ -524,3 +524,5 @@
 2018-09-23 22:31:27,580 [Worker-10: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/oro/oro/2.0.8/oro-2.0.8.jar
 2018-09-23 22:31:27,673 [Worker-10: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar
 2018-09-23 22:31:28,024 [Worker-10: reload maven project] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/jdom/jdom/1.1/jdom-1.1.jar
+2018-09-25 21:06:00,274 [Worker-6: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-09-27 18:36:05,664 [Worker-1: Loading available Gradle versions] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

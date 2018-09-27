@@ -44,42 +44,56 @@ public class EntitySelector
      * This matches the at-tokens introduced for command blocks, including their arguments, if any.
      */
     private static final Pattern TOKEN_PATTERN = Pattern.compile("^@([pares])(?:\\[([^ ]*)\\])?$");
-    private static final Splitter field_190828_b = Splitter.on(',').omitEmptyStrings();
-    private static final Splitter field_190829_c = Splitter.on('=').limit(2);
-    private static final Set<String> field_190830_d = Sets.<String>newHashSet();
-    private static final String field_190831_e = func_190826_c("r");
-    private static final String field_190832_f = func_190826_c("rm");
-    private static final String field_190833_g = func_190826_c("l");
-    private static final String field_190834_h = func_190826_c("lm");
-    private static final String field_190835_i = func_190826_c("x");
-    private static final String field_190836_j = func_190826_c("y");
-    private static final String field_190837_k = func_190826_c("z");
-    private static final String field_190838_l = func_190826_c("dx");
-    private static final String field_190839_m = func_190826_c("dy");
-    private static final String field_190840_n = func_190826_c("dz");
-    private static final String field_190841_o = func_190826_c("rx");
-    private static final String field_190842_p = func_190826_c("rxm");
-    private static final String field_190843_q = func_190826_c("ry");
-    private static final String field_190844_r = func_190826_c("rym");
-    private static final String field_190845_s = func_190826_c("c");
-    private static final String field_190846_t = func_190826_c("m");
-    private static final String field_190847_u = func_190826_c("team");
-    private static final String field_190848_v = func_190826_c("name");
-    private static final String field_190849_w = func_190826_c("type");
-    private static final String field_190850_x = func_190826_c("tag");
+    private static final Splitter comaSplitter = Splitter.on(',').omitEmptyStrings();
+    private static final Splitter equalSplitter = Splitter.on('=').limit(2);
+    private static final Set<String> parameterSet = Sets.<String>newHashSet();
+    
+    
+    private static final String R = addParameter("r"); // 	 Maximum radius (target must be within the specified number of blocks)
+    private static final String RM = addParameter("rm"); // Minimum radius (target must be more than the specified number of blocks away)
+    private static final String L = addParameter("l"); // 	 Selects only targets with L experience levels at most
+    private static final String LM = addParameter("lm"); // Selects only targets with L experience levels at least
+    
+    // Selects targets based on distance to that exact position. Combine with selecting by distance to select only targets
+    // within a certain distance of that specific position, or combine with volume dimensions to select only targets within a certain cubic volume.
+    private static final String X = addParameter("x");
+    private static final String Y = addParameter("y");
+    private static final String Z = addParameter("z");
+    
+    // Selects only targets within the volume defined as starting from the location where the command was executed and
+    // extending DX blocks in the "x" direction (i.e., east/west), DY blocks in the "y" direction (i.e., upwards/downwards),
+    // and DZ blocks in the "z" direction (i.e., north/south)
+    private static final String DX = addParameter("dx");
+    private static final String DY = addParameter("dy");
+    private static final String DZ = addParameter("dz");
+    
+    
+    private static final String RX = addParameter("rx"); // 	Maximum vertical rotation
+    private static final String RXM = addParameter("rxm"); // 	Minimum vertical rotation
+    private static final String RY = addParameter("ry"); // 	Maximum horizontal rotation
+    private static final String RYM = addParameter("rym"); // 	Minimum horizontal rotation
+    private static final String C = addParameter("c"); // 		Maximum number of targets to select
+    private static final String M = addParameter("m"); // 		Game mode of the target
+    private static final String TEAM = addParameter("team");// Team name of the target 
+    private static final String NAME = addParameter("name");// Name of the target
+    private static final String TYPE = addParameter("type");// Entity type of the target
+    private static final String TAG = addParameter("tag"); //  Scoreboard tag associated with the target
+    
+    
     private static final Predicate<String> field_190851_y = new Predicate<String>()
     {
         public boolean apply(@Nullable String p_apply_1_)
         {
-            return p_apply_1_ != null && (EntitySelector.field_190830_d.contains(p_apply_1_) || p_apply_1_.length() > "score_".length() && p_apply_1_.startsWith("score_"));
+            //return p_apply_1_ != null && ((EntitySelector.parameterSet.contains(p_apply_1_) || p_apply_1_.length() > "score_".length()) && p_apply_1_.startsWith("score_"));
+            return p_apply_1_ != null && (EntitySelector.parameterSet.contains(p_apply_1_) || p_apply_1_.length() > "score_".length() && p_apply_1_.startsWith("score_"));
         }
     };
-    private static final Set<String> WORLD_BINDING_ARGS = Sets.newHashSet(field_190835_i, field_190836_j, field_190837_k, field_190838_l, field_190839_m, field_190840_n, field_190832_f, field_190831_e);
+    private static final Set<String> WORLD_BINDING_ARGS = Sets.newHashSet(X, Y, Z, DX, DY, DZ, RM, R);
 
-    private static String func_190826_c(String p_190826_0_)
+    private static String addParameter(String parameterLiteral)
     {
-        field_190830_d.add(p_190826_0_);
-        return p_190826_0_;
+        parameterSet.add(parameterLiteral);
+        return parameterLiteral;
     }
 
     @Nullable
@@ -167,11 +181,11 @@ public class EntitySelector
 
                             if (entity != null && targetClass.isAssignableFrom(entity.getClass()))
                             {
-                                if (map.containsKey(field_190838_l) || map.containsKey(field_190839_m) || map.containsKey(field_190840_n))
+                                if (map.containsKey(DX) || map.containsKey(DY) || map.containsKey(DZ))
                                 {
-                                    int i = getInt(map, field_190838_l, 0);
-                                    int j = getInt(map, field_190839_m, 0);
-                                    int k = getInt(map, field_190840_n, 0);
+                                    int i = getInt(map, DX, 0);
+                                    int j = getInt(map, DY, 0);
+                                    int k = getInt(map, DZ, 0);
                                     AxisAlignedBB axisalignedbb = getAABB(blockpos, i, j, k);
 
                                     if (!axisalignedbb.intersectsWith(entity.getEntityBoundingBox()))
@@ -225,7 +239,7 @@ public class EntitySelector
 
     private static <T extends Entity> boolean isEntityTypeValid(ICommandSender commandSender, Map<String, String> params)
     {
-        String s = getArgument(params, field_190849_w);
+        String s = getArgument(params, TYPE);
 
         if (s == null)
         {
@@ -251,7 +265,7 @@ public class EntitySelector
 
     private static List<Predicate<Entity>> getTypePredicates(Map<String, String> params, String type)
     {
-        String s = getArgument(params, field_190849_w);
+        String s = getArgument(params, TYPE);
 
         if (s == null || !type.equals("e") && !type.equals("r") && !type.equals("s"))
         {
@@ -280,8 +294,8 @@ public class EntitySelector
     private static List<Predicate<Entity>> getXpLevelPredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        final int i = getInt(params, field_190834_h, -1);
-        final int j = getInt(params, field_190833_g, -1);
+        final int i = getInt(params, LM, -1);
+        final int j = getInt(params, L, -1);
 
         if (i > -1 || j > -1)
         {
@@ -308,7 +322,7 @@ public class EntitySelector
     private static List<Predicate<Entity>> getGamemodePredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, field_190846_t);
+        String s = getArgument(params, M);
 
         if (s == null)
         {
@@ -359,7 +373,7 @@ public class EntitySelector
     private static List<Predicate<Entity>> getTeamPredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, field_190847_u);
+        String s = getArgument(params, TEAM);
         final boolean flag = s != null && s.startsWith("!");
 
         if (flag)
@@ -455,7 +469,7 @@ public class EntitySelector
     private static List<Predicate<Entity>> getNamePredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, field_190848_v);
+        String s = getArgument(params, NAME);
         final boolean flag = s != null && s.startsWith("!");
 
         if (flag)
@@ -481,7 +495,7 @@ public class EntitySelector
     private static List<Predicate<Entity>> getTagPredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, field_190850_x);
+        String s = getArgument(params, TAG);
         final boolean flag = s != null && s.startsWith("!");
 
         if (flag)
@@ -517,8 +531,8 @@ public class EntitySelector
 
     private static List<Predicate<Entity>> getRadiusPredicates(Map<String, String> params, final Vec3d pos)
     {
-        double d0 = (double)getInt(params, field_190832_f, -1);
-        double d1 = (double)getInt(params, field_190831_e, -1);
+        double d0 = (double)getInt(params, RM, -1);
+        double d1 = (double)getInt(params, R, -1);
         final boolean flag = d0 < -0.5D;
         final boolean flag1 = d1 < -0.5D;
 
@@ -554,10 +568,10 @@ public class EntitySelector
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
 
-        if (params.containsKey(field_190844_r) || params.containsKey(field_190843_q))
+        if (params.containsKey(RYM) || params.containsKey(RY))
         {
-            final int i = MathHelper.clampAngle(getInt(params, field_190844_r, 0));
-            final int j = MathHelper.clampAngle(getInt(params, field_190843_q, 359));
+            final int i = MathHelper.clampAngle(getInt(params, RYM, 0));
+            final int j = MathHelper.clampAngle(getInt(params, RY, 359));
             list.add(new Predicate<Entity>()
             {
                 public boolean apply(@Nullable Entity p_apply_1_)
@@ -583,10 +597,10 @@ public class EntitySelector
             });
         }
 
-        if (params.containsKey(field_190842_p) || params.containsKey(field_190841_o))
+        if (params.containsKey(RXM) || params.containsKey(RX))
         {
-            final int k = MathHelper.clampAngle(getInt(params, field_190842_p, 0));
-            final int l = MathHelper.clampAngle(getInt(params, field_190841_o, 359));
+            final int k = MathHelper.clampAngle(getInt(params, RXM, 0));
+            final int l = MathHelper.clampAngle(getInt(params, RX, 359));
             list.add(new Predicate<Entity>()
             {
                 public boolean apply(@Nullable Entity p_apply_1_)
@@ -618,18 +632,18 @@ public class EntitySelector
     private static <T extends Entity> List<T> filterResults(Map<String, String> params, Class <? extends T > entityClass, List<Predicate<Entity>> inputList, String type, World worldIn, BlockPos position)
     {
         List<T> list = Lists.<T>newArrayList();
-        String s = getArgument(params, field_190849_w);
+        String s = getArgument(params, TYPE);
         s = s != null && s.startsWith("!") ? s.substring(1) : s;
         boolean flag = !type.equals("e");
         boolean flag1 = type.equals("r") && s != null;
-        int i = getInt(params, field_190838_l, 0);
-        int j = getInt(params, field_190839_m, 0);
-        int k = getInt(params, field_190840_n, 0);
-        int l = getInt(params, field_190831_e, -1);
+        int i = getInt(params, DX, 0);
+        int j = getInt(params, DY, 0);
+        int k = getInt(params, DZ, 0);
+        int l = getInt(params, R, -1);
         Predicate<Entity> predicate = Predicates.and(inputList);
         Predicate<Entity> predicate1 = Predicates.<Entity> and (EntitySelectors.IS_ALIVE, predicate);
 
-        if (!params.containsKey(field_190838_l) && !params.containsKey(field_190839_m) && !params.containsKey(field_190840_n))
+        if (!params.containsKey(DX) && !params.containsKey(DY) && !params.containsKey(DZ))
         {
             if (l >= 0)
             {
@@ -683,7 +697,7 @@ public class EntitySelector
 
     private static <T extends Entity> List<T> getEntitiesFromPredicates(List<T> matchingEntities, Map<String, String> params, ICommandSender sender, Class <? extends T > targetClass, String type, final Vec3d pos)
     {
-        int i = getInt(params, field_190845_s, !type.equals("a") && !type.equals("e") ? 1 : 0);
+        int i = getInt(params, C, !type.equals("a") && !type.equals("e") ? 1 : 0);
 
         if (!type.equals("p") && !type.equals("a") && !type.equals("e"))
         {
@@ -739,12 +753,12 @@ public class EntitySelector
 
     private static BlockPos getBlockPosFromArguments(Map<String, String> params, BlockPos pos)
     {
-        return new BlockPos(getInt(params, field_190835_i, pos.getX()), getInt(params, field_190836_j, pos.getY()), getInt(params, field_190837_k, pos.getZ()));
+        return new BlockPos(getInt(params, X, pos.getX()), getInt(params, Y, pos.getY()), getInt(params, Z, pos.getZ()));
     }
 
     private static Vec3d getPosFromArguments(Map<String, String> params, Vec3d pos)
     {
-        return new Vec3d(getCoordinate(params, field_190835_i, pos.xCoord, true), getCoordinate(params, field_190836_j, pos.yCoord, false), getCoordinate(params, field_190837_k, pos.zCoord, true));
+        return new Vec3d(getCoordinate(params, X, pos.xCoord, true), getCoordinate(params, Y, pos.yCoord, false), getCoordinate(params, Z, pos.zCoord, true));
     }
 
     private static double getCoordinate(Map<String, String> params, String key, double defaultD, boolean offset)
@@ -807,7 +821,7 @@ public class EntitySelector
             Map<String, String> map = getArgumentMap(matcher.group(2));
             String s = matcher.group(1);
             int i = !"a".equals(s) && !"e".equals(s) ? 1 : 0;
-            return getInt(map, field_190845_s, i) != 1;
+            return getInt(map, C, i) != 1;
         }
     }
 
@@ -829,9 +843,9 @@ public class EntitySelector
         }
         else
         {
-            for (String s : field_190828_b.split(argumentString))
+            for (String s : comaSplitter.split(argumentString))
             {
-                Iterator<String> iterator = field_190829_c.split(s).iterator();
+                Iterator<String> iterator = equalSplitter.split(s).iterator();
                 String s1 = iterator.next();
 
                 if (!field_190851_y.apply(s1))

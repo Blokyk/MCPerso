@@ -103,7 +103,8 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "beaches": "2018-09-22 17:15:33 +0200"
+      "beaches": "2018-09-22 17:15:33 +0200",
+      "desert": "2018-09-25 22:35:07 +0200"
     },
     "done": false
   }
