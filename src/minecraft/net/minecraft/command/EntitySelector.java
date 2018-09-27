@@ -79,17 +79,39 @@ public class EntitySelector
     private static final String TYPE = addParameter("type");// Entity type of the target
     private static final String TAG = addParameter("tag"); //  Scoreboard tag associated with the target
     
+    private static final Set<String> WORLD_BINDING_ARGS = Sets.newHashSet(X, Y, Z, DX, DY, DZ, RM, R);
     
-    private static final Predicate<String> field_190851_y = new Predicate<String>()
+    /**
+     * Is this string a recognized parameter or a score filter (it looks like "@e[score_varname=1]")
+     */
+    private static final Predicate<String> isAValidParameter = new Predicate<String>()
     {
-        public boolean apply(@Nullable String p_apply_1_)
+        public boolean apply(@Nullable String filterLiteral)
         {
-            //return p_apply_1_ != null && ((EntitySelector.parameterSet.contains(p_apply_1_) || p_apply_1_.length() > "score_".length()) && p_apply_1_.startsWith("score_"));
-            return p_apply_1_ != null && (EntitySelector.parameterSet.contains(p_apply_1_) || p_apply_1_.length() > "score_".length() && p_apply_1_.startsWith("score_"));
+        	if (filterLiteral != null) {
+        			
+				if (EntitySelector.parameterSet.contains(filterLiteral)) { // If the parameter (filter) is recognized to be in the parameter list, then return true
+					return true;
+					
+				} else if (filterLiteral.length() > "score_".length()) { // If the parameter (filter) has a length greater than "score_"
+					
+					if (filterLiteral.startsWith("score_")) { // If the parameter (filter) starts with "score_", then return true 
+						return true;
+					}
+				}
+			}
+        	
+        	return false;
+        	
+        	// This is the one-liner that was here before :
+            // return filter != null && (EntitySelector.parameterSet.contains(filter) || filter.length() > "score_".length() && filter.startsWith("score_"));
         }
     };
-    private static final Set<String> WORLD_BINDING_ARGS = Sets.newHashSet(X, Y, Z, DX, DY, DZ, RM, R);
-
+    
+    /**
+     * Add a parameter to the valid parameters list
+     * @return The string inputed
+     */
     private static String addParameter(String parameterLiteral)
     {
         parameterSet.add(parameterLiteral);
@@ -106,9 +128,9 @@ public class EntitySelector
         return (EntityPlayerMP)matchOneEntity(sender, token, EntityPlayerMP.class);
     }
 
-    public static List<EntityPlayerMP> func_193531_b(ICommandSender p_193531_0_, String p_193531_1_) throws CommandException
+    public static List<EntityPlayerMP> matchEntities(ICommandSender sender, String token) throws CommandException
     {
-        return matchEntities(p_193531_0_, p_193531_1_, EntityPlayerMP.class);
+        return matchEntities(sender, token, EntityPlayerMP.class);
     }
 
     @Nullable
@@ -322,47 +344,51 @@ public class EntitySelector
     private static List<Predicate<Entity>> getGamemodePredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, M);
+        String arg = getArgument(params, M);
 
-        if (s == null)
+        if (arg == null)
         {
             return list;
         }
         else
         {
-            final boolean flag = s.startsWith("!");
+            final boolean NOTFlag = arg.startsWith("!");
 
-            if (flag)
+            if (NOTFlag)
             {
-                s = s.substring(1);
+                arg = arg.substring(1);
             }
 
             GameType gametype;
 
             try
             {
-                int i = Integer.parseInt(s);
+                int i = Integer.parseInt(arg);
                 gametype = GameType.parseGameTypeWithDefault(i, GameType.NOT_SET);
             }
-            catch (Throwable var6)
+            catch (Throwable e)
             {
-                gametype = GameType.parseGameTypeWithDefault(s, GameType.NOT_SET);
+                gametype = GameType.parseGameTypeWithDefault(arg, GameType.NOT_SET);
             }
 
-            final GameType type = gametype;
+            final GameType type = gametype; // The 'gametype' variable is the game type/mode (=gamemode) (creative, survival, adventure, spectator or none)
+            								// of the given parameter by parsing it
+            
             list.add(new Predicate<Entity>()
             {
-                public boolean apply(@Nullable Entity p_apply_1_)
+                public boolean apply(@Nullable Entity entity)
                 {
-                    if (!(p_apply_1_ instanceof EntityPlayerMP))
+                    if (!(entity instanceof EntityPlayerMP))
                     {
                         return false;
                     }
                     else
                     {
-                        EntityPlayerMP entityplayermp = (EntityPlayerMP)p_apply_1_;
-                        GameType gametype1 = entityplayermp.interactionManager.getGameType();
-                        return flag ? gametype1 != type : gametype1 == type;
+                        EntityPlayerMP entityplayermp = (EntityPlayerMP)entity;
+                        GameType gametype1 = entityplayermp.interactionManager.getGameType(); // Get the gamemode (creative, survival, adventure, spectator or none) of the entity
+                        return NOTFlag ? gametype1 != type : gametype1 == type; // Check that the gamemode of the entity is
+                        														// of the given type in parameter and, if the condition is inverted, return
+                        														// the opposite of the result
                     }
                 }
             });
@@ -848,7 +874,7 @@ public class EntitySelector
                 Iterator<String> iterator = equalSplitter.split(s).iterator();
                 String s1 = iterator.next();
 
-                if (!field_190851_y.apply(s1))
+                if (!isAValidParameter.apply(s1))
                 {
                     throw new CommandException("commands.generic.selector_argument", new Object[] {s});
                 }
