@@ -322,7 +322,7 @@ public abstract class EntityPlayer extends EntityLivingBase
                 this.resetCooldown();
             }
 
-            this.itemStackMainHand = itemstack.func_190926_b() ? ItemStack.nullItemStack : itemstack.copy();
+            this.itemStackMainHand = itemstack.isNull() ? ItemStack.nullItemStack : itemstack.copy();
         }
 
         this.cooldownTracker.tick();
@@ -727,7 +727,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         {
             ItemStack itemstack = this.inventory.getStackInSlot(i);
 
-            if (!itemstack.func_190926_b() && EnchantmentHelper.func_190939_c(itemstack))
+            if (!itemstack.isNull() && EnchantmentHelper.func_190939_c(itemstack))
             {
                 this.inventory.removeStackFromSlot(i);
             }
@@ -759,7 +759,7 @@ public abstract class EntityPlayer extends EntityLivingBase
      */
     public EntityItem dropItem(boolean dropAll)
     {
-        return this.dropItem(this.inventory.decrStackSize(this.inventory.currentItem, dropAll && !this.inventory.getCurrentItem().func_190926_b() ? this.inventory.getCurrentItem().func_190916_E() : 1), false, true);
+        return this.dropItem(this.inventory.decrStackSize(this.inventory.currentItem, dropAll && !this.inventory.getCurrentItem().isNull() ? this.inventory.getCurrentItem().func_190916_E() : 1), false, true);
     }
 
     @Nullable
@@ -775,7 +775,7 @@ public abstract class EntityPlayer extends EntityLivingBase
     @Nullable
     public EntityItem dropItem(ItemStack droppedItem, boolean dropAround, boolean traceItem)
     {
-        if (droppedItem.func_190926_b())
+        if (droppedItem.isNull())
         {
             return null;
         }
@@ -815,7 +815,7 @@ public abstract class EntityPlayer extends EntityLivingBase
 
             if (traceItem)
             {
-                if (!itemstack.func_190926_b())
+                if (!itemstack.isNull())
                 {
                     this.addStat(StatList.getDroppedObjectStats(itemstack.getItem()), droppedItem.func_190916_E());
                 }
@@ -842,7 +842,7 @@ public abstract class EntityPlayer extends EntityLivingBase
             int i = EnchantmentHelper.getEfficiencyModifier(this);
             ItemStack itemstack = this.getHeldItemMainhand();
 
-            if (i > 0 && !itemstack.func_190926_b())
+            if (i > 0 && !itemstack.isNull())
             {
                 f += (float)(i * i + 1);
             }
@@ -1107,7 +1107,7 @@ public abstract class EntityPlayer extends EntityLivingBase
             int i = 1 + MathHelper.floor(damage);
             this.activeItemStack.damageItem(i, this);
 
-            if (this.activeItemStack.func_190926_b())
+            if (this.activeItemStack.isNull())
             {
                 EnumHand enumhand = this.getActiveHand();
 
@@ -1136,7 +1136,7 @@ public abstract class EntityPlayer extends EntityLivingBase
 
         for (ItemStack itemstack : this.inventory.armorInventory)
         {
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 ++i;
             }
@@ -1227,7 +1227,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         else
         {
             ItemStack itemstack = this.getHeldItem(p_190775_2_);
-            ItemStack itemstack1 = itemstack.func_190926_b() ? ItemStack.nullItemStack : itemstack.copy();
+            ItemStack itemstack1 = itemstack.isNull() ? ItemStack.nullItemStack : itemstack.copy();
 
             if (p_190775_1_.processInitialInteract(this, p_190775_2_))
             {
@@ -1240,7 +1240,7 @@ public abstract class EntityPlayer extends EntityLivingBase
             }
             else
             {
-                if (!itemstack.func_190926_b() && p_190775_1_ instanceof EntityLivingBase)
+                if (!itemstack.isNull() && p_190775_1_ instanceof EntityLivingBase)
                 {
                     if (this.capabilities.isCreativeMode)
                     {
@@ -1249,7 +1249,7 @@ public abstract class EntityPlayer extends EntityLivingBase
 
                     if (itemstack.interactWithEntity(this, (EntityLivingBase)p_190775_1_, p_190775_2_))
                     {
-                        if (itemstack.func_190926_b() && !this.capabilities.isCreativeMode)
+                        if (itemstack.isNull() && !this.capabilities.isCreativeMode)
                         {
                             this.setHeldItem(p_190775_2_, ItemStack.nullItemStack);
                         }
@@ -1448,11 +1448,11 @@ public abstract class EntityPlayer extends EntityLivingBase
                             }
                         }
 
-                        if (!itemstack1.func_190926_b() && entity instanceof EntityLivingBase)
+                        if (!itemstack1.isNull() && entity instanceof EntityLivingBase)
                         {
                             itemstack1.hitEntity((EntityLivingBase)entity, this);
 
-                            if (itemstack1.func_190926_b())
+                            if (itemstack1.isNull())
                             {
                                 this.setHeldItem(EnumHand.MAIN_HAND, ItemStack.nullItemStack);
                             }
@@ -2173,7 +2173,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         {
             return true;
         }
-        else if (stack.func_190926_b())
+        else if (stack.isNull())
         {
             return false;
         }
@@ -2482,7 +2482,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         else
         {
             ItemStack itemstack = this.getHeldItemMainhand();
-            return !itemstack.func_190926_b() && itemstack.hasDisplayName() ? itemstack.getDisplayName().equals(code.getLock()) : false;
+            return !itemstack.isNull() && itemstack.hasDisplayName() ? itemstack.getDisplayName().equals(code.getLock()) : false;
         }
     }
 
@@ -2557,7 +2557,7 @@ public abstract class EntityPlayer extends EntityLivingBase
             }
             else
             {
-                if (!itemStackIn.func_190926_b())
+                if (!itemStackIn.isNull())
                 {
                     if (!(itemStackIn.getItem() instanceof ItemArmor) && !(itemStackIn.getItem() instanceof ItemElytra))
                     {

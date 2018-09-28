@@ -24,7 +24,7 @@ public class RecipeItemHelper
 
     public void func_194112_a(ItemStack p_194112_1_)
     {
-        if (!p_194112_1_.func_190926_b() && !p_194112_1_.isItemDamaged() && !p_194112_1_.isItemEnchanted() && !p_194112_1_.hasDisplayName())
+        if (!p_194112_1_.isNull() && !p_194112_1_.isItemDamaged() && !p_194112_1_.isItemEnchanted() && !p_194112_1_.hasDisplayName())
         {
             int i = func_194113_b(p_194112_1_);
             int j = p_194112_1_.func_190916_E();

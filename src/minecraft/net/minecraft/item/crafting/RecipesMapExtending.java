@@ -29,7 +29,7 @@ public class RecipesMapExtending extends ShapedRecipes
         {
             ItemStack itemstack = ItemStack.nullItemStack;
 
-            for (int i = 0; i < inv.getSizeInventory() && itemstack.func_190926_b(); ++i)
+            for (int i = 0; i < inv.getSizeInventory() && itemstack.isNull(); ++i)
             {
                 ItemStack itemstack1 = inv.getStackInSlot(i);
 
@@ -39,7 +39,7 @@ public class RecipesMapExtending extends ShapedRecipes
                 }
             }
 
-            if (itemstack.func_190926_b())
+            if (itemstack.isNull())
             {
                 return false;
             }
@@ -86,7 +86,7 @@ public class RecipesMapExtending extends ShapedRecipes
     {
         ItemStack itemstack = ItemStack.nullItemStack;
 
-        for (int i = 0; i < inv.getSizeInventory() && itemstack.func_190926_b(); ++i)
+        for (int i = 0; i < inv.getSizeInventory() && itemstack.isNull(); ++i)
         {
             ItemStack itemstack1 = inv.getStackInSlot(i);
 

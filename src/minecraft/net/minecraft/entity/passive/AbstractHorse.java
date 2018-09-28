@@ -316,7 +316,7 @@ public abstract class AbstractHorse extends EntityAnimal implements IInventoryCh
             {
                 ItemStack itemstack = containerhorsechest.getStackInSlot(j);
 
-                if (!itemstack.func_190926_b())
+                if (!itemstack.isNull())
                 {
                     this.horseChest.setInventorySlotContents(j, itemstack.copy());
                 }
@@ -334,7 +334,7 @@ public abstract class AbstractHorse extends EntityAnimal implements IInventoryCh
     {
         if (!this.world.isRemote)
         {
-            this.setHorseSaddled(!this.horseChest.getStackInSlot(0).func_190926_b() && this.func_190685_dA());
+            this.setHorseSaddled(!this.horseChest.getStackInSlot(0).isNull() && this.func_190685_dA());
         }
     }
 
@@ -654,7 +654,7 @@ public abstract class AbstractHorse extends EntityAnimal implements IInventoryCh
             {
                 ItemStack itemstack = this.horseChest.getStackInSlot(i);
 
-                if (!itemstack.func_190926_b())
+                if (!itemstack.isNull())
                 {
                     this.entityDropItem(itemstack, 0.0F);
                 }
@@ -989,7 +989,7 @@ public abstract class AbstractHorse extends EntityAnimal implements IInventoryCh
             compound.setString("OwnerUUID", this.getOwnerUniqueId().toString());
         }
 
-        if (!this.horseChest.getStackInSlot(0).func_190926_b())
+        if (!this.horseChest.getStackInSlot(0).isNull())
         {
             compound.setTag("SaddleItem", this.horseChest.getStackInSlot(0).writeToNBT(new NBTTagCompound()));
         }

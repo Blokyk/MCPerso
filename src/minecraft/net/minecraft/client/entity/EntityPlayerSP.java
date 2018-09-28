@@ -690,7 +690,7 @@ public class EntityPlayerSP extends AbstractClientPlayer
     {
         ItemStack itemstack = this.getHeldItem(hand);
 
-        if (!itemstack.func_190926_b() && !this.isHandActive())
+        if (!itemstack.isNull() && !this.isHandActive())
         {
             super.setActiveHand(hand);
             this.handActive = true;

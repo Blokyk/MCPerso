@@ -106,7 +106,7 @@ public class ContainerMerchant extends Container
                 return ItemStack.nullItemStack;
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 slot.putStack(ItemStack.nullItemStack);
             }
@@ -139,14 +139,14 @@ public class ContainerMerchant extends Container
         {
             ItemStack itemstack = this.merchantInventory.removeStackFromSlot(0);
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 playerIn.dropItem(itemstack, false);
             }
 
             itemstack = this.merchantInventory.removeStackFromSlot(1);
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 playerIn.dropItem(itemstack, false);
             }

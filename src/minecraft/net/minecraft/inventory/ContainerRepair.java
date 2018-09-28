@@ -85,7 +85,7 @@ public class ContainerRepair extends Container
                 {
                     ItemStack itemstack = ContainerRepair.this.inputSlots.getStackInSlot(1);
 
-                    if (!itemstack.func_190926_b() && itemstack.func_190916_E() > ContainerRepair.this.materialCost)
+                    if (!itemstack.isNull() && itemstack.func_190916_E() > ContainerRepair.this.materialCost)
                     {
                         itemstack.func_190918_g(ContainerRepair.this.materialCost);
                         ContainerRepair.this.inputSlots.setInventorySlotContents(1, itemstack);
@@ -166,7 +166,7 @@ public class ContainerRepair extends Container
         int j = 0;
         int k = 0;
 
-        if (itemstack.func_190926_b())
+        if (itemstack.isNull())
         {
             this.outputSlot.setInventorySlotContents(0, ItemStack.nullItemStack);
             this.maximumCost = 0;
@@ -176,10 +176,10 @@ public class ContainerRepair extends Container
             ItemStack itemstack1 = itemstack.copy();
             ItemStack itemstack2 = this.inputSlots.getStackInSlot(1);
             Map<Enchantment, Integer> map = EnchantmentHelper.getEnchantments(itemstack1);
-            j = j + itemstack.getRepairCost() + (itemstack2.func_190926_b() ? 0 : itemstack2.getRepairCost());
+            j = j + itemstack.getRepairCost() + (itemstack2.isNull() ? 0 : itemstack2.getRepairCost());
             this.materialCost = 0;
 
-            if (!itemstack2.func_190926_b())
+            if (!itemstack2.isNull())
             {
                 boolean flag = itemstack2.getItem() == Items.ENCHANTED_BOOK && !ItemEnchantedBook.getEnchantments(itemstack2).hasNoTags();
 
@@ -353,11 +353,11 @@ public class ContainerRepair extends Container
                 itemstack1 = ItemStack.nullItemStack;
             }
 
-            if (!itemstack1.func_190926_b())
+            if (!itemstack1.isNull())
             {
                 int k2 = itemstack1.getRepairCost();
 
-                if (!itemstack2.func_190926_b() && k2 < itemstack2.getRepairCost())
+                if (!itemstack2.isNull() && k2 < itemstack2.getRepairCost())
                 {
                     k2 = itemstack2.getRepairCost();
                 }
@@ -452,7 +452,7 @@ public class ContainerRepair extends Container
                 return ItemStack.nullItemStack;
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 slot.putStack(ItemStack.nullItemStack);
             }

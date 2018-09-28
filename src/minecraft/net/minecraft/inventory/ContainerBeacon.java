@@ -63,7 +63,7 @@ public class ContainerBeacon extends Container
         {
             ItemStack itemstack = this.beaconSlot.decrStackSize(this.beaconSlot.getSlotStackLimit());
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 playerIn.dropItem(itemstack, false);
             }
@@ -126,7 +126,7 @@ public class ContainerBeacon extends Container
                 return ItemStack.nullItemStack;
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 slot.putStack(ItemStack.nullItemStack);
             }

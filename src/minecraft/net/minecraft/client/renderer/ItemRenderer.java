@@ -59,7 +59,7 @@ public class ItemRenderer
 
     public void renderItemSide(EntityLivingBase entitylivingbaseIn, ItemStack heldStack, ItemCameraTransforms.TransformType transform, boolean leftHanded)
     {
-        if (!heldStack.func_190926_b())
+        if (!heldStack.isNull())
         {
             Item item = heldStack.getItem();
             Block block = Block.getBlockFromItem(item);
@@ -357,7 +357,7 @@ public class ItemRenderer
         EnumHandSide enumhandside = flag ? p_187457_1_.getPrimaryHand() : p_187457_1_.getPrimaryHand().opposite();
         GlStateManager.pushMatrix();
 
-        if (p_187457_6_.func_190926_b())
+        if (p_187457_6_.isNull())
         {
             if (flag && !p_187457_1_.isInvisible())
             {
@@ -366,7 +366,7 @@ public class ItemRenderer
         }
         else if (p_187457_6_.getItem() == Items.FILLED_MAP)
         {
-            if (flag && this.itemStackOffHand.func_190926_b())
+            if (flag && this.itemStackOffHand.isNull())
             {
                 this.renderMapFirstPerson(p_187457_3_, p_187457_7_, p_187457_5_);
             }

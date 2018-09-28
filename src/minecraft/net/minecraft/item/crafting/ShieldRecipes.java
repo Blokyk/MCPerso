@@ -20,11 +20,11 @@ public class ShieldRecipes
             {
                 ItemStack itemstack2 = inv.getStackInSlot(i);
 
-                if (!itemstack2.func_190926_b())
+                if (!itemstack2.isNull())
                 {
                     if (itemstack2.getItem() == Items.BANNER)
                     {
-                        if (!itemstack1.func_190926_b())
+                        if (!itemstack1.isNull())
                         {
                             return false;
                         }
@@ -38,7 +38,7 @@ public class ShieldRecipes
                             return false;
                         }
 
-                        if (!itemstack.func_190926_b())
+                        if (!itemstack.isNull())
                         {
                             return false;
                         }
@@ -53,7 +53,7 @@ public class ShieldRecipes
                 }
             }
 
-            if (!itemstack.func_190926_b() && !itemstack1.func_190926_b())
+            if (!itemstack.isNull() && !itemstack1.isNull())
             {
                 return true;
             }
@@ -72,7 +72,7 @@ public class ShieldRecipes
             {
                 ItemStack itemstack2 = inv.getStackInSlot(i);
 
-                if (!itemstack2.func_190926_b())
+                if (!itemstack2.isNull())
                 {
                     if (itemstack2.getItem() == Items.BANNER)
                     {
@@ -85,7 +85,7 @@ public class ShieldRecipes
                 }
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 return itemstack1;
             }

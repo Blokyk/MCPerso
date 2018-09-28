@@ -28,7 +28,7 @@ public class TextComponentString extends TextComponentBase
     }
 
     /**
-     * Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied.
+     * Creates a copy of this component.  Almost a deep copy, except the style is shallow-copied
      */
     public TextComponentString createCopy()
     {

@@ -74,7 +74,7 @@ public class ItemPotion extends Item
 
         if (entityplayer == null || !entityplayer.capabilities.isCreativeMode)
         {
-            if (stack.func_190926_b())
+            if (stack.isNull())
             {
                 return new ItemStack(Items.GLASS_BOTTLE);
             }

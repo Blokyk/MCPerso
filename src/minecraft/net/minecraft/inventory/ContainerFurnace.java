@@ -116,7 +116,7 @@ public class ContainerFurnace extends Container
             }
             else if (index != 1 && index != 0)
             {
-                if (!FurnaceRecipes.instance().getSmeltingResult(itemstack1).func_190926_b())
+                if (!FurnaceRecipes.instance().getSmeltingResult(itemstack1).isNull())
                 {
                     if (!this.mergeItemStack(itemstack1, 0, 1, false))
                     {
@@ -147,7 +147,7 @@ public class ContainerFurnace extends Container
                 return ItemStack.nullItemStack;
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 slot.putStack(ItemStack.nullItemStack);
             }

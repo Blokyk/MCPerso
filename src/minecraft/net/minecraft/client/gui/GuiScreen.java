@@ -306,7 +306,7 @@ public abstract class GuiScreen extends Gui implements GuiYesNoCallback
                     ;
                 }
 
-                if (itemstack.func_190926_b())
+                if (itemstack.isNull())
                 {
                     this.drawCreativeTabHoveringText(TextFormatting.RED + "Invalid Item!", x, y);
                 }

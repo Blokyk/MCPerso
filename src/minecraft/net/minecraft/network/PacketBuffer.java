@@ -352,7 +352,7 @@ public class PacketBuffer extends ByteBuf
      */
     public PacketBuffer writeItemStackToBuffer(ItemStack stack)
     {
-        if (stack.func_190926_b())
+        if (stack.isNull())
         {
             this.writeShort(-1);
         }

@@ -1291,7 +1291,7 @@ public class EntityRenderer implements IResourceManagerReloadListener
                     }
                     else
                     {
-                        flag = !itemstack.func_190926_b() && (itemstack.canDestroy(block) || itemstack.canPlaceOn(block));
+                        flag = !itemstack.isNull() && (itemstack.canDestroy(block) || itemstack.canPlaceOn(block));
                     }
                 }
             }

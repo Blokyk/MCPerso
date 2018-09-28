@@ -57,7 +57,7 @@ public class HotbarSnapshot extends ArrayList<ItemStack>
     {
         for (int i = 0; i < hotbarSize; ++i)
         {
-            if (!((ItemStack)this.get(i)).func_190926_b())
+            if (!((ItemStack)this.get(i)).isNull())
             {
                 return false;
             }

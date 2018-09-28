@@ -50,7 +50,7 @@ public class ContainerPlayer extends Container
                 public boolean canTakeStack(EntityPlayer playerIn)
                 {
                     ItemStack itemstack = this.getStack();
-                    return !itemstack.func_190926_b() && !playerIn.isCreative() && EnchantmentHelper.func_190938_b(itemstack) ? false : super.canTakeStack(playerIn);
+                    return !itemstack.isNull() && !playerIn.isCreative() && EnchantmentHelper.func_190938_b(itemstack) ? false : super.canTakeStack(playerIn);
                 }
                 @Nullable
                 public String getSlotTexture()
@@ -185,7 +185,7 @@ public class ContainerPlayer extends Container
                 return ItemStack.nullItemStack;
             }
 
-            if (itemstack1.func_190926_b())
+            if (itemstack1.isNull())
             {
                 slot.putStack(ItemStack.nullItemStack);
             }

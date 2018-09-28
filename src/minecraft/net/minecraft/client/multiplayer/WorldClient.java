@@ -358,7 +358,7 @@ public class WorldClient extends World
         int i = 32;
         Random random = new Random();
         ItemStack itemstack = this.mc.player.getHeldItemMainhand();
-        boolean flag = this.mc.playerController.getCurrentGameType() == GameType.CREATIVE && !itemstack.func_190926_b() && itemstack.getItem() == Item.getItemFromBlock(Blocks.BARRIER);
+        boolean flag = this.mc.playerController.getCurrentGameType() == GameType.CREATIVE && !itemstack.isNull() && itemstack.getItem() == Item.getItemFromBlock(Blocks.BARRIER);
         BlockPos.MutableBlockPos blockpos$mutableblockpos = new BlockPos.MutableBlockPos();
 
         for (int j = 0; j < 667; ++j)

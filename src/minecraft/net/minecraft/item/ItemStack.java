@@ -117,7 +117,7 @@ public final class ItemStack
 
     private void func_190923_F()
     {
-        this.field_190928_g = this.func_190926_b();
+        this.field_190928_g = this.isNull();
     }
 
     public ItemStack(NBTTagCompound p_i47263_1_)
@@ -144,7 +144,7 @@ public final class ItemStack
      * Could be IsNull() function 
      * @return
      */
-    public boolean func_190926_b()
+    public boolean isNull()
     {
         if (this == nullItemStack)
         {
@@ -450,11 +450,11 @@ public final class ItemStack
 
     public static boolean areItemStackTagsEqual(ItemStack stackA, ItemStack stackB)
     {
-        if (stackA.func_190926_b() && stackB.func_190926_b())
+        if (stackA.isNull() && stackB.isNull())
         {
             return true;
         }
-        else if (!stackA.func_190926_b() && !stackB.func_190926_b())
+        else if (!stackA.isNull() && !stackB.isNull())
         {
             if (stackA.stackTagCompound == null && stackB.stackTagCompound != null)
             {
@@ -476,13 +476,13 @@ public final class ItemStack
      */
     public static boolean areItemStacksEqual(ItemStack stackA, ItemStack stackB)
     {
-        if (stackA.func_190926_b() && stackB.func_190926_b())
+        if (stackA.isNull() && stackB.isNull())
         {
             return true;
         }
         else
         {
-            return !stackA.func_190926_b() && !stackB.func_190926_b() ? stackA.isItemStackEqual(stackB) : false;
+            return !stackA.isNull() && !stackB.isNull() ? stackA.isItemStackEqual(stackB) : false;
         }
     }
 
@@ -524,7 +524,7 @@ public final class ItemStack
         }
         else
         {
-            return !stackA.func_190926_b() && !stackB.func_190926_b() ? stackA.isItemEqual(stackB) : false;
+            return !stackA.isNull() && !stackB.isNull() ? stackA.isItemEqual(stackB) : false;
         }
     }
 
@@ -536,7 +536,7 @@ public final class ItemStack
         }
         else
         {
-            return !stackA.func_190926_b() && !stackB.func_190926_b() ? stackA.isItemEqualIgnoreDurability(stackB) : false;
+            return !stackA.isNull() && !stackB.isNull() ? stackA.isItemEqualIgnoreDurability(stackB) : false;
         }
     }
 
@@ -546,7 +546,7 @@ public final class ItemStack
      */
     public boolean isItemEqual(ItemStack other)
     {
-        return !other.func_190926_b() && this.item == other.item && this.itemDamage == other.itemDamage;
+        return !other.isNull() && this.item == other.item && this.itemDamage == other.itemDamage;
     }
 
     public boolean isItemEqualIgnoreDurability(ItemStack stack)
@@ -557,7 +557,7 @@ public final class ItemStack
         }
         else
         {
-            return !stack.func_190926_b() && this.item == stack.item;
+            return !stack.isNull() && this.item == stack.item;
         }
     }
 

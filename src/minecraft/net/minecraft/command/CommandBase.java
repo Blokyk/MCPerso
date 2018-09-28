@@ -39,8 +39,8 @@ import org.apache.commons.lang3.exception.ExceptionUtils;
 public abstract class CommandBase implements ICommand
 {
     private static ICommandListener commandListener;
-    private static final Splitter field_190796_b = Splitter.on(',');
-    private static final Splitter field_190797_c = Splitter.on('=').limit(2);
+    private static final Splitter comaSplitter = Splitter.on(',');
+    private static final Splitter equalSplitter = Splitter.on('=').limit(2);
 
     /**
      * Convert a JsonParseException into a user-friendly exception
@@ -71,7 +71,7 @@ public abstract class CommandBase implements ICommand
         {
             ItemStack itemstack = ((EntityPlayer)theEntity).inventory.getCurrentItem();
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 nbttagcompound.setTag("SelectedItem", itemstack.writeToNBT(new NBTTagCompound()));
             }
@@ -255,24 +255,29 @@ public abstract class CommandBase implements ICommand
         }
     }
 
-    public static List<EntityPlayerMP> func_193513_a(MinecraftServer p_193513_0_, ICommandSender p_193513_1_, String p_193513_2_) throws CommandException
+    public static List<EntityPlayerMP> getPlayerListByIdentifierOrSelector(MinecraftServer server, ICommandSender sender, String target) throws CommandException
     {
-        List<EntityPlayerMP> list = EntitySelector.matchEntities(p_193513_1_, p_193513_2_);
-        return (List<EntityPlayerMP>)(list.isEmpty() ? Lists.newArrayList(func_193512_a(p_193513_0_, (EntityPlayerMP)null, p_193513_2_)) : list);
+        List<EntityPlayerMP> list = EntitySelector.matchEntities(sender, target);
+        
+        if (list.isEmpty()) {
+			return (List<EntityPlayerMP>)Lists.newArrayList(getPlayerByIdentifier(server, (EntityPlayerMP)null, target));
+		}
+        
+        return list;
     }
 
     public static EntityPlayerMP getPlayer(MinecraftServer server, ICommandSender sender, String target) throws PlayerNotFoundException, CommandException
     {
-        return func_193512_a(server, EntitySelector.matchOnePlayer(sender, target), target);
+        return getPlayerByIdentifier(server, EntitySelector.matchOnePlayer(sender, target), target);
     }
 
-    private static EntityPlayerMP func_193512_a(MinecraftServer p_193512_0_, @Nullable EntityPlayerMP p_193512_1_, String p_193512_2_) throws CommandException
+    private static EntityPlayerMP getPlayerByIdentifier(MinecraftServer server, @Nullable EntityPlayerMP playerEntity, String target) throws CommandException
     {
-        if (p_193512_1_ == null)
+        if (playerEntity == null)
         {
             try
             {
-                p_193512_1_ = p_193512_0_.getPlayerList().getPlayerByUUID(UUID.fromString(p_193512_2_));
+                playerEntity = server.getPlayerList().getPlayerByUUID(UUID.fromString(target));
             }
             catch (IllegalArgumentException var4)
             {
@@ -280,18 +285,18 @@ public abstract class CommandBase implements ICommand
             }
         }
 
-        if (p_193512_1_ == null)
+        if (playerEntity == null)
         {
-            p_193512_1_ = p_193512_0_.getPlayerList().getPlayerByUsername(p_193512_2_);
+            playerEntity = server.getPlayerList().getPlayerByUsername(target);
         }
 
-        if (p_193512_1_ == null)
+        if (playerEntity == null)
         {
-            throw new PlayerNotFoundException("commands.generic.player.notFound", new Object[] {p_193512_2_});
+            throw new PlayerNotFoundException("commands.generic.player.notFound", new Object[] {target});
         }
         else
         {
-            return p_193512_1_;
+            return playerEntity;
         }
     }
 
@@ -699,7 +704,7 @@ public abstract class CommandBase implements ICommand
         else
         {
             BlockStateContainer blockstatecontainer = p_190795_0_.getBlockState();
-            Iterator iterator = field_190796_b.split(p_190795_1_).iterator();
+            Iterator iterator = comaSplitter.split(p_190795_1_).iterator();
 
             while (true)
             {
@@ -709,7 +714,7 @@ public abstract class CommandBase implements ICommand
                 }
 
                 String s = (String)iterator.next();
-                Iterator<String> iterator1 = field_190797_c.split(s).iterator();
+                Iterator<String> iterator1 = equalSplitter.split(s).iterator();
 
                 if (!iterator1.hasNext())
                 {

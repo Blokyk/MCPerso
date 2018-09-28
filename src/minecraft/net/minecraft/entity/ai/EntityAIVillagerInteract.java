@@ -57,7 +57,7 @@ public class EntityAIVillagerInteract extends EntityAIWatchClosest2
                     ItemStack itemstack = inventorybasic.getStackInSlot(i);
                     ItemStack itemstack1 = ItemStack.nullItemStack;
 
-                    if (!itemstack.func_190926_b())
+                    if (!itemstack.isNull())
                     {
                         Item item = itemstack.getItem();
 
@@ -75,13 +75,13 @@ public class EntityAIVillagerInteract extends EntityAIWatchClosest2
                             itemstack1 = new ItemStack(Items.BREAD, k, 0);
                         }
 
-                        if (itemstack.func_190926_b())
+                        if (itemstack.isNull())
                         {
                             inventorybasic.setInventorySlotContents(i, ItemStack.nullItemStack);
                         }
                     }
 
-                    if (!itemstack1.func_190926_b())
+                    if (!itemstack1.isNull())
                     {
                         double d0 = this.villager.posY - 0.30000001192092896D + (double)this.villager.getEyeHeight();
                         EntityItem entityitem = new EntityItem(this.villager.world, this.villager.posX, d0, this.villager.posZ, itemstack1);

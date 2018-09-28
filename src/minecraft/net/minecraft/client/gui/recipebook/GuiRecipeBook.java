@@ -549,7 +549,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
             {
                 ItemStack itemstack = this.field_193961_o.getStackInSlot(j);
 
-                if (!itemstack.func_190926_b() && i > itemstack.func_190916_E())
+                if (!itemstack.isNull() && i > itemstack.func_190916_E())
                 {
                     flag1 = false;
                 }
@@ -601,7 +601,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
         {
             ItemStack itemstack = this.field_193961_o.getStackInSlot(i);
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 while (itemstack.func_190916_E() > 0)
                 {
@@ -652,7 +652,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
             {
                 ItemStack itemstack = this.field_193961_o.getStackInSlot(j);
 
-                if (!itemstack.func_190926_b() && i > itemstack.func_190916_E())
+                if (!itemstack.isNull() && i > itemstack.func_190916_E())
                 {
                     i = itemstack.func_190916_E();
                 }
@@ -695,7 +695,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
                 Slot slot = p_193013_2_.get(j1);
                 ItemStack itemstack = RecipeItemHelper.func_194115_b(((Integer)iterator.next()).intValue());
 
-                if (itemstack.func_190926_b())
+                if (itemstack.isNull())
                 {
                     ++j1;
                 }
@@ -736,7 +736,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
         {
             ItemStack itemstack = inventoryplayer.getStackInSlot(i).copy();
 
-            if (itemstack.func_190926_b())
+            if (itemstack.isNull())
             {
                 field_193959_i.error("Matched: " + p_193946_3_.getUnlocalizedName() + " with empty item.");
                 return null;
@@ -754,7 +754,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
 
                 itemstack.func_190920_e(1);
 
-                if (p_193946_2_.getStack().func_190926_b())
+                if (p_193946_2_.getStack().isNull())
                 {
                     p_193946_2_.putStack(itemstack);
                 }
@@ -776,7 +776,7 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
         {
             ItemStack itemstack = this.field_193961_o.getStackInSlot(i);
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 int j = inventoryplayer.storeItemStack(itemstack);
 

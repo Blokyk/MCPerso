@@ -59,7 +59,7 @@ public class RecipesBanners
             {
                 ItemStack itemstack1 = inv.getStackInSlot(i);
 
-                if (!itemstack1.func_190926_b() && itemstack1.getItem() == Items.BANNER)
+                if (!itemstack1.isNull() && itemstack1.getItem() == Items.BANNER)
                 {
                     itemstack = itemstack1.copy();
                     itemstack.func_190920_e(1);
@@ -146,7 +146,7 @@ public class RecipesBanners
                         {
                             ItemStack itemstack = p_190933_1_.getStackInSlot(i);
 
-                            if (!itemstack.func_190926_b() && itemstack.getItem() != Items.BANNER)
+                            if (!itemstack.isNull() && itemstack.getItem() != Items.BANNER)
                             {
                                 if (itemstack.getItem() == Items.DYE)
                                 {
@@ -186,7 +186,7 @@ public class RecipesBanners
                             int i1 = k % 3;
                             ItemStack itemstack1 = p_190933_1_.getStackInSlot(k);
 
-                            if (!itemstack1.func_190926_b() && itemstack1.getItem() != Items.BANNER)
+                            if (!itemstack1.isNull() && itemstack1.getItem() != Items.BANNER)
                             {
                                 if (itemstack1.getItem() != Items.DYE)
                                 {
@@ -252,14 +252,14 @@ public class RecipesBanners
             {
                 ItemStack itemstack2 = inv.getStackInSlot(i);
 
-                if (!itemstack2.func_190926_b())
+                if (!itemstack2.isNull())
                 {
                     if (itemstack2.getItem() != Items.BANNER)
                     {
                         return false;
                     }
 
-                    if (!itemstack.func_190926_b() && !itemstack1.func_190926_b())
+                    if (!itemstack.isNull() && !itemstack1.isNull())
                     {
                         return false;
                     }
@@ -267,7 +267,7 @@ public class RecipesBanners
                     EnumDyeColor enumdyecolor = ItemBanner.getBaseColor(itemstack2);
                     boolean flag = TileEntityBanner.getPatterns(itemstack2) > 0;
 
-                    if (!itemstack.func_190926_b())
+                    if (!itemstack.isNull())
                     {
                         if (flag)
                         {
@@ -281,7 +281,7 @@ public class RecipesBanners
 
                         itemstack1 = itemstack2;
                     }
-                    else if (!itemstack1.func_190926_b())
+                    else if (!itemstack1.isNull())
                     {
                         if (!flag)
                         {
@@ -306,7 +306,7 @@ public class RecipesBanners
                 }
             }
 
-            return !itemstack.func_190926_b() && !itemstack1.func_190926_b();
+            return !itemstack.isNull() && !itemstack1.isNull();
         }
 
         public ItemStack getCraftingResult(InventoryCrafting inv)
@@ -315,7 +315,7 @@ public class RecipesBanners
             {
                 ItemStack itemstack = inv.getStackInSlot(i);
 
-                if (!itemstack.func_190926_b() && TileEntityBanner.getPatterns(itemstack) > 0)
+                if (!itemstack.isNull() && TileEntityBanner.getPatterns(itemstack) > 0)
                 {
                     ItemStack itemstack1 = itemstack.copy();
                     itemstack1.func_190920_e(1);
@@ -339,7 +339,7 @@ public class RecipesBanners
             {
                 ItemStack itemstack = inv.getStackInSlot(i);
 
-                if (!itemstack.func_190926_b())
+                if (!itemstack.isNull())
                 {
                     if (itemstack.getItem().hasContainerItem())
                     {

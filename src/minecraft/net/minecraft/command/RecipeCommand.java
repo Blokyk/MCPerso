@@ -57,7 +57,7 @@ public class RecipeCommand extends CommandBase
             }
             else
             {
-                for (EntityPlayerMP entityplayermp : func_193513_a(server, sender, args[1]))
+                for (EntityPlayerMP entityplayermp : getPlayerListByIdentifierOrSelector(server, sender, args[1]))
                 {
                     if ("*".equals(args[2]))
                     {

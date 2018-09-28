@@ -34,7 +34,7 @@ import org.apache.logging.log4j.Logger;
 
 public class CraftingManager
 {
-    private static final Logger field_192422_a = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
     private static int field_193381_c;
     public static final RegistryNamespaced<ResourceLocation, IRecipe> field_193380_a = new RegistryNamespaced<ResourceLocation, IRecipe>();
 
@@ -84,7 +84,7 @@ public class CraftingManager
                 {
                     if (!"jar".equals(uri.getScheme()))
                     {
-                        field_192422_a.error("Unsupported scheme " + uri + " trying to list all recipes");
+                        LOGGER.error("Unsupported scheme " + uri + " trying to list all recipes");
                         boolean flag2 = false;
                         return flag2;
                     }
@@ -117,13 +117,13 @@ public class CraftingManager
                             }
                             catch (JsonParseException jsonparseexception)
                             {
-                                field_192422_a.error("Parsing error loading recipe " + resourcelocation, (Throwable)jsonparseexception);
+                                LOGGER.error("Parsing error loading recipe " + resourcelocation, (Throwable)jsonparseexception);
                                 flag = false;
                                 return flag;
                             }
                             catch (IOException ioexception)
                             {
-                                field_192422_a.error("Couldn't read recipe " + resourcelocation + " from " + path1, (Throwable)ioexception);
+                                LOGGER.error("Couldn't read recipe " + resourcelocation + " from " + path1, (Throwable)ioexception);
                                 flag = false;
                                 return flag;
                             }
@@ -138,12 +138,12 @@ public class CraftingManager
                 return true;
             }
 
-            field_192422_a.error("Couldn't find .mcassetsroot");
+            LOGGER.error("Couldn't find .mcassetsroot");
             flag1 = false;
         }
         catch (IOException | URISyntaxException urisyntaxexception)
         {
-            field_192422_a.error("Couldn't get a list of all recipe files", (Throwable)urisyntaxexception);
+            LOGGER.error("Couldn't get a list of all recipe files", (Throwable)urisyntaxexception);
             flag1 = false;
             return flag1;
         }

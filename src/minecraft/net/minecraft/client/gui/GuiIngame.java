@@ -545,7 +545,7 @@ public class GuiIngame extends Gui
             this.drawTexturedModalRect(i - 91, sr.getScaledHeight() - 22, 0, 0, 182, 22);
             this.drawTexturedModalRect(i - 91 - 1 + entityplayer.inventory.currentItem * 20, sr.getScaledHeight() - 22 - 1, 0, 22, 24, 22);
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 if (enumhandside == EnumHandSide.LEFT)
                 {
@@ -570,7 +570,7 @@ public class GuiIngame extends Gui
                 this.renderHotbarItem(i1, j1, partialTicks, entityplayer, entityplayer.inventory.mainInventory.get(l));
             }
 
-            if (!itemstack.func_190926_b())
+            if (!itemstack.isNull())
             {
                 int l1 = sr.getScaledHeight() - 16 - 3;
 
@@ -670,7 +670,7 @@ public class GuiIngame extends Gui
     {
         this.mc.mcProfiler.startSection("selectedItemName");
 
-        if (this.remainingHighlightTicks > 0 && !this.highlightingItemStack.func_190926_b())
+        if (this.remainingHighlightTicks > 0 && !this.highlightingItemStack.isNull())
         {
             String s = this.highlightingItemStack.getDisplayName();
 
@@ -1170,7 +1170,7 @@ public class GuiIngame extends Gui
 
     private void renderHotbarItem(int p_184044_1_, int p_184044_2_, float p_184044_3_, EntityPlayer player, ItemStack stack)
     {
-        if (!stack.func_190926_b())
+        if (!stack.isNull())
         {
             float f = (float)stack.func_190921_D() - p_184044_3_;
 
@@ -1221,11 +1221,11 @@ public class GuiIngame extends Gui
         {
             ItemStack itemstack = this.mc.player.inventory.getCurrentItem();
 
-            if (itemstack.func_190926_b())
+            if (itemstack.isNull())
             {
                 this.remainingHighlightTicks = 0;
             }
-            else if (!this.highlightingItemStack.func_190926_b() && itemstack.getItem() == this.highlightingItemStack.getItem() && ItemStack.areItemStackTagsEqual(itemstack, this.highlightingItemStack) && (itemstack.isItemStackDamageable() || itemstack.getMetadata() == this.highlightingItemStack.getMetadata()))
+            else if (!this.highlightingItemStack.isNull() && itemstack.getItem() == this.highlightingItemStack.getItem() && ItemStack.areItemStackTagsEqual(itemstack, this.highlightingItemStack) && (itemstack.isItemStackDamageable() || itemstack.getMetadata() == this.highlightingItemStack.getMetadata()))
             {
                 if (this.remainingHighlightTicks > 0)
                 {

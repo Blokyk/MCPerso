@@ -72,7 +72,7 @@ public class EntityAISkeletonRiders extends EntityAIBase
         entityskeleton.hurtResistantTime = 60;
         entityskeleton.enablePersistence();
 
-        if (entityskeleton.getItemStackFromSlot(EntityEquipmentSlot.HEAD).func_190926_b())
+        if (entityskeleton.getItemStackFromSlot(EntityEquipmentSlot.HEAD).isNull())
         {
             entityskeleton.setItemStackToSlot(EntityEquipmentSlot.HEAD, new ItemStack(Items.IRON_HELMET));
         }

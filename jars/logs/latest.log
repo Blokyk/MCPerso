@@ -1,679 +1,1723 @@
-[21:35:30] [Client thread/INFO]: Setting user: Player199
-[21:35:30] [Client thread/DEBUG]: (Session ID is token:0:Player199)
-[21:35:33] [Client thread/INFO]: Loaded 488 advancements
-[21:35:33] [Client thread/INFO]: LWJGL Version: 2.9.4
-[21:35:36] [Client thread/INFO]: Reloading ResourceManager: Default
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:ambient.cave
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.destroy
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.use
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.brewing_stand.brew
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.locked
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.chorus_flower.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.chorus_flower.grow
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.comparator.click
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.dispense
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.fail
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.launch
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.enchantment_table.use
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.end_gateway.spawn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.end_portal.spawn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.end_portal_frame.fill
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.enderchest.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.enderchest.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.fence_gate.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.fence_gate.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.fire.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.fire.extinguish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.furnace.fire_crackle
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_door.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_door.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_trapdoor.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_trapdoor.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.extinguish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.pop
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.lever.click
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal_pressureplate.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.metal_pressureplate.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.basedrum
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.bass
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.bell
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.chime
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.flute
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.guitar
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.harp
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.hat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.pling
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.snare
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.note.xylophone
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.piston.contract
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.piston.extend
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.travel
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.trigger
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.redstone_torch.burnout
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.shulker_box.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.shulker_box.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_button.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_button.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_pressureplate.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_pressureplate.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.attach
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.detach
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.water.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.waterlily.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_button.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_button.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_pressureplate.click_off
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_pressureplate.click_on
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_door.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_door.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_trapdoor.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_trapdoor.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:enchant.thorns.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.hit_player
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.loop
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.takeoff
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.burn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.boat.paddle_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.boat.paddle_water
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.retrieve
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.splash
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.hiss
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.purr
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.purreow
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.egg
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.milk
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.primed
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.angry
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.chest
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.egg.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.ambient_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.curse
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.death_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.flop
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.hurt_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.flap
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.growl
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon_fireball.explode
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endereye.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endereye.launch
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.scream
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.stare
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.teleport
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderpearl.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_fangs.attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.cast_spell
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_summon
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_wololo
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.experience_bottle.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.experience_orb.pickup
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.blast
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.blast_far
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.large_blast
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.large_blast_far
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.launch
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.twinkle
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.twinkle_far
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.big_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.burn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.drink
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.eat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.explode
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.extinguish_fire
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.small_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.splash
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.swim
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.scream
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.warn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.ambient_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.death_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.flop
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.hurt_land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.angry
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.armor
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.breathe
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.eat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.gallop
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.jump
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.land
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.saddle
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.step_wood
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.big_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.small_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.splash
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.swim
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.cast_spell
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.mirror_move
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.prepare_blindness
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.prepare_mirror
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.item.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.item.pickup
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.add_item
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.remove_item
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.rotate_item
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.leashknot.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.leashknot.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.lightning.impact
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.lightning.thunder
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.lingeringpotion.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.angry
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.chest
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.eat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.spit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.swag
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.jump
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.squish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.minecart.inside
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.minecart.riding
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.mooshroom.shear
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.chest
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.painting.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.painting.place
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.eat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.fly
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.blaze
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.creeper
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.elder_guardian
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.enderdragon
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.enderman
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.endermite
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.evocation_illager
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.ghast
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.husk
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.illusion_illager
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.magmacube
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.polar_bear
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.shulker
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.silverfish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.skeleton
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.slime
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.spider
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.stray
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.vex
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.vindication_illager
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.witch
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wither
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wither_skeleton
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wolf
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie_pigman
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie_villager
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.saddle
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.crit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.knockback
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.nodamage
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.strong
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.sweep
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.weak
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.big_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.breath
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.burp
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt_drown
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt_on_fire
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.levelup
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.small_fall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.splash
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.swim
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.baby_ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.warning
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.jump
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.shear
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.close
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.hurt_closed
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.open
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.teleport
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker_bullet.hit
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker_bullet.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.attack
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.jump
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.squish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.squish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.jump
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.squish
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowball.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.splash_potion.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.splash_potion.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.tnt.primed
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.charge
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.no
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.trading
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.yes
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.drink
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.throw
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.break_block
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.shoot
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.spawn
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.growl
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.howl
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.pant
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.shake
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.whine
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.attack_door_wood
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.attack_iron_door
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.break_door_wood
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.infect
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.angry
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.ambient
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.converted
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.cure
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.death
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.hurt
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.step
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_chain
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_diamond
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_elytra
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_generic
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_gold
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_iron
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_leather
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.empty
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.fill
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.fill_dragonbreath
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.empty
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.empty_lava
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.fill
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.fill_lava
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.chorus_fruit.teleport
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.elytra.flying
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.firecharge.use
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.flintandsteel.use
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.hoe.till
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.shield.block
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.shield.break
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.shovel.flatten
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:item.totem.use
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.creative
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.credits
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.dragon
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.end
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.game
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.menu
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:music.nether
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.11
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.13
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.blocks
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.cat
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.chirp
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.far
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.mall
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.mellohi
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.stal
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.strad
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.wait
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:record.ward
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:ui.button.click
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.in
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.out
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.challenge_complete
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:weather.rain
-[21:35:37] [Client thread/WARN]: Missing sound for event: minecraft:weather.rain.above
-[21:35:37] [Sound Library Loader/INFO]: Starting up SoundSystem...
-[21:35:37] [Thread-3/INFO]: Initializing LWJGL OpenAL
-[21:35:37] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
-[21:35:37] [Thread-3/INFO]: OpenAL initialized.
-[21:35:37] [Sound Library Loader/INFO]: Sound engine started
-[21:35:43] [Client thread/INFO]: Created: 1024x512 textures-atlas
-[21:35:45] [Client thread/INFO]: Narrator library for x64 successfully loaded
-[21:36:13] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
-[21:36:22] [Server thread/INFO]: Starting integrated minecraft server version 1.12
-[21:36:22] [Server thread/INFO]: Generating keypair
-[21:36:22] [Server thread/INFO]: Loaded 488 advancements
-[21:36:23] [Server thread/INFO]: Preparing start region for level 0
-[21:36:24] [Server thread/INFO]: Preparing spawn area: 10%
-[21:36:25] [Server thread/INFO]: Preparing spawn area: 18%
-[21:36:26] [Server thread/INFO]: Preparing spawn area: 30%
-[21:36:27] [Server thread/INFO]: Preparing spawn area: 44%
-[21:36:28] [Server thread/INFO]: Preparing spawn area: 58%
-[21:36:29] [Server thread/INFO]: Preparing spawn area: 73%
-[21:36:30] [Server thread/INFO]: Preparing spawn area: 89%
-[21:36:30] [Server thread/INFO]: Changing view distance to 8, from 10
-[21:36:41] [Netty Server IO #1/DEBUG]: Set listener of net.minecraft.network.NetworkManager@2334a007 to net.minecraft.client.network.NetHandlerHandshakeMemory@1c239c17
-[21:36:41] [Client thread/DEBUG]: Set listener of net.minecraft.network.NetworkManager@7b4791d9 to net.minecraft.client.network.NetHandlerLoginClient@70201785
-[21:36:41] [Netty Server IO #1/DEBUG]: Enabled auto read
-[21:36:41] [Client thread/DEBUG]: Disabled auto read
-[21:36:41] [Netty Local Client IO #0/DEBUG]: Enabled auto read
-[21:36:41] [Netty Local Client IO #0/DEBUG]: Enabled auto read
-[21:36:41] [Client thread/DEBUG]: Disabled auto read
-[21:36:41] [Netty Local Client IO #0/DEBUG]: Enabled auto read
-[21:36:41] [Netty Server IO #1/DEBUG]: Enabled auto read
-[21:36:41] [Netty Server IO #1/DEBUG]: Set listener of net.minecraft.network.NetworkManager@2334a007 to net.minecraft.server.network.NetHandlerLoginServer@27390c5e
-[21:36:41] [Netty Local Client IO #0/DEBUG]: Enabled auto read
-[21:36:41] [Netty Local Client IO #0/DEBUG]: Set listener of net.minecraft.network.NetworkManager@7b4791d9 to net.minecraft.client.network.NetHandlerPlayClient@5617258c
-[21:36:41] [Server thread/INFO]: Player199[local:E:42c40040] logged in with entity id 2083 at (-1.5, 68.0, 236.5)
-[21:36:41] [Server thread/DEBUG]: Set listener of net.minecraft.network.NetworkManager@2334a007 to net.minecraft.network.NetHandlerPlayServer@b6086e1
-[21:36:41] [Server thread/DEBUG]: Disabled auto read
-[21:36:41] [Netty Server IO #1/DEBUG]: Enabled auto read
-[21:36:41] [Server thread/INFO]: Player199 joined the game
-[21:36:43] [Server thread/INFO]: Saving and pausing game...
-[21:36:43] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
-[21:36:43] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
-[21:36:43] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
-[21:36:44] [Client thread/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:36:45] [Chunk Batcher 3/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:36:47] [Chunk Batcher 3/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:36:47] [Server thread/INFO]: [Player199] Player199
-[21:36:48] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:36:50] [Chunk Batcher 0/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:36:51] [Chunk Batcher 4/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:36:52] [Server thread/DEBUG]: Player199 is sending move packets too frequently (6 packets since last tick)
-[21:36:52] [Server thread/DEBUG]: Player199 is sending move packets too frequently (7 packets since last tick)
-[21:36:52] [Server thread/DEBUG]: Player199 is sending move packets too frequently (8 packets since last tick)
-[21:36:52] [Server thread/DEBUG]: Player199 is sending move packets too frequently (9 packets since last tick)
-[21:37:10] [Server thread/INFO]: [Player199] Player199
-[21:37:10] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:37:16] [Server thread/INFO]: [Player199] Player199
-[21:37:16] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:37:25] [Server thread/INFO]: [Player199] Player199
-[21:37:25] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:37:26] [Chunk Batcher 0/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:26] [Chunk Batcher 0/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:28] [Server thread/DEBUG]: Player199 is sending move packets too frequently (6 packets since last tick)
-[21:37:28] [Server thread/DEBUG]: Player199 is sending move packets too frequently (7 packets since last tick)
-[21:37:38] [Chunk Batcher 2/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:41] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:43] [Chunk Batcher 2/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:44] [Chunk Batcher 0/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:37:53] [Server thread/INFO]: [Player199: Object successfully summoned]
-[21:37:53] [Client thread/INFO]: [CHAT] Object successfully summoned
-[21:37:58] [Server thread/INFO]: [Player199: Object successfully summoned]
-[21:37:58] [Client thread/INFO]: [CHAT] Object successfully summoned
-[21:38:04] [Server thread/INFO]: [Player199] Player199, Cow and item.item.leather
-[21:38:04] [Client thread/INFO]: [CHAT] [Player199] Player199, Cow and item.item.leather
-[21:38:09] [Client thread/INFO]: Loaded 6 advancements
-[21:38:12] [Server thread/INFO]: Saving and pausing game...
-[21:38:12] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
-[21:38:12] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
-[21:38:12] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
-[21:38:31] [Client thread/INFO]: [CHAT] Invalid selector argument: 'r=10'
-[21:38:32] [Server thread/INFO]: Saving and pausing game...
-[21:38:32] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
-[21:38:33] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
-[21:38:33] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
-[21:41:32] [Server thread/INFO]: [Player199] Player199 and Cow
-[21:41:32] [Client thread/INFO]: [CHAT] [Player199] Player199 and Cow
-[21:41:36] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:41:37] [Server thread/INFO]: [Player199] Player199, Cow and item.item.beefRaw
-[21:41:37] [Client thread/INFO]: [CHAT] [Player199] Player199, Cow and item.item.beefRaw
-[21:41:43] [Chunk Batcher 3/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
-[21:41:47] [Server thread/INFO]: [Player199] Player199, item.item.beefRaw and Cow
-[21:41:47] [Client thread/INFO]: [CHAT] [Player199] Player199, item.item.beefRaw and Cow
-[21:42:02] [Server thread/INFO]: [Player199] Player199, item.item.beefRaw, item.item.beefRaw, Cow and item.item.beefRaw
-[21:42:02] [Client thread/INFO]: [CHAT] [Player199] Player199, item.item.beefRaw, item.item.beefRaw, Cow and item.item.beefRaw
-[21:42:11] [Server thread/DEBUG]: Player199 is sending move packets too frequently (6 packets since last tick)
-[21:42:28] [Client thread/INFO]: Loaded 15 advancements
-[21:42:45] [Server thread/DEBUG]: Player199 is sending move packets too frequently (6 packets since last tick)
-[21:42:45] [Server thread/DEBUG]: Player199 is sending move packets too frequently (7 packets since last tick)
-[21:42:45] [Server thread/DEBUG]: Player199 is sending move packets too frequently (8 packets since last tick)
-[21:42:45] [Server thread/DEBUG]: Player199 is sending move packets too frequently (9 packets since last tick)
-[21:42:51] [Server thread/INFO]: [Player199: Object successfully summoned]
-[21:42:51] [Client thread/INFO]: [CHAT] Object successfully summoned
-[21:42:55] [Server thread/INFO]: [Player199] Player199 and item.item.beefRaw
-[21:42:55] [Client thread/INFO]: [CHAT] [Player199] Player199 and item.item.beefRaw
-[21:43:00] [Client thread/INFO]: Loaded 21 advancements
-[21:43:04] [Server thread/INFO]: Saving and pausing game...
-[21:43:04] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
-[21:43:04] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
-[21:43:04] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
-[21:45:35] [Client thread/INFO]: [CHAT] Selector '@e[score_test=1]' found nothing
-[21:45:57] [Server thread/INFO]: [Player199: Added new objective 'test' successfully]
-[21:45:57] [Client thread/INFO]: [CHAT] Added new objective 'test' successfully
-[21:46:09] [Client thread/INFO]: [CHAT] add, enable, list, operation, remove, reset, set, tag, test
-[21:46:09] [Client thread/INFO]: [CHAT] add, enable, list, operation, remove, reset, set, tag, test
-[21:46:19] [Server thread/INFO]: [Player199: Set score of test for player Player199 to 1]
-[21:46:19] [Client thread/INFO]: [CHAT] Set score of test for player Player199 to 1
-[21:46:26] [Server thread/INFO]: [Player199] Player199
-[21:46:26] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:46:36] [Server thread/INFO]: [Player199: Set score of test for player Player199 to 5]
-[21:46:36] [Client thread/INFO]: [CHAT] Set score of test for player Player199 to 5
-[21:46:38] [Client thread/INFO]: [CHAT] Selector '@e[score_test=1]' found nothing
-[21:46:44] [Server thread/INFO]: [Player199] Player199
-[21:46:44] [Client thread/INFO]: [CHAT] [Player199] Player199
-[21:46:46] [Server thread/INFO]: Saving and pausing game...
-[21:46:46] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
-[21:46:46] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
-[21:46:46] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:29:58] [Client thread/INFO]: Setting user: Player697
+[22:29:58] [Client thread/DEBUG]: (Session ID is token:0:Player697)
+[22:30:02] [Client thread/INFO]: Loaded 488 advancements
+[22:30:03] [Client thread/INFO]: LWJGL Version: 2.9.4
+[22:30:07] [Client thread/INFO]: Reloading ResourceManager: Default
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:ambient.cave
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.destroy
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.anvil.use
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.brewing_stand.brew
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.locked
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.chest.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.chorus_flower.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.chorus_flower.grow
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.cloth.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.comparator.click
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.dispense
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.fail
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.dispenser.launch
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.enchantment_table.use
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.end_gateway.spawn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.end_portal.spawn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.end_portal_frame.fill
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.enderchest.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.enderchest.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.fence_gate.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.fence_gate.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.fire.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.fire.extinguish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.furnace.fire_crackle
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.glass.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.grass.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.gravel.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_door.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_door.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_trapdoor.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.iron_trapdoor.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.ladder.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.extinguish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.lava.pop
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.lever.click
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal_pressureplate.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.metal_pressureplate.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.basedrum
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.bass
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.bell
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.chime
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.flute
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.guitar
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.harp
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.hat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.pling
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.snare
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.note.xylophone
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.piston.contract
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.piston.extend
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.travel
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.portal.trigger
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.redstone_torch.burnout
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.sand.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.shulker_box.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.shulker_box.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.slime.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.snow.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_button.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_button.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_pressureplate.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.stone_pressureplate.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.attach
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.tripwire.detach
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.water.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.waterlily.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_button.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_button.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_pressureplate.click_off
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wood_pressureplate.click_on
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_door.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_door.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_trapdoor.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:block.wooden_trapdoor.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:enchant.thorns.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.armorstand.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.hit_player
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.arrow.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.loop
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bat.takeoff
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.burn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.blaze.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.boat.paddle_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.boat.paddle_water
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.retrieve
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.splash
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.bobber.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.hiss
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.purr
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cat.purreow
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.egg
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.chicken.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.milk
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.cow.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.creeper.primed
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.angry
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.chest
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.donkey.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.egg.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.ambient_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.curse
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.death_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.flop
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.elder_guardian.hurt_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.flap
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.growl
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderdragon_fireball.explode
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endereye.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endereye.launch
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.scream
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.stare
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermen.teleport
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.endermite.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.enderpearl.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_fangs.attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.cast_spell
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_summon
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.evocation_illager.prepare_wololo
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.experience_bottle.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.experience_orb.pickup
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.blast
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.blast_far
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.large_blast
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.large_blast_far
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.launch
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.twinkle
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.firework.twinkle_far
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.big_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.burn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.drink
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.eat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.explode
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.extinguish_fire
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.small_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.splash
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.generic.swim
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.scream
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.ghast.warn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.ambient_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.death_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.flop
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.guardian.hurt_land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.angry
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.armor
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.breathe
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.eat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.gallop
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.jump
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.land
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.saddle
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.horse.step_wood
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.big_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.small_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.splash
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.hostile.swim
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.husk.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.cast_spell
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.mirror_move
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.prepare_blindness
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.illusion_illager.prepare_mirror
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.irongolem.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.item.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.item.pickup
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.add_item
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.remove_item
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.itemframe.rotate_item
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.leashknot.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.leashknot.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.lightning.impact
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.lightning.thunder
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.lingeringpotion.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.angry
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.chest
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.eat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.spit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.llama.swag
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.jump
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.magmacube.squish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.minecart.inside
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.minecart.riding
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.mooshroom.shear
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.chest
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.mule.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.painting.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.painting.place
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.eat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.fly
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.blaze
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.creeper
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.elder_guardian
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.enderdragon
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.enderman
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.endermite
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.evocation_illager
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.ghast
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.husk
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.illusion_illager
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.magmacube
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.polar_bear
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.shulker
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.silverfish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.skeleton
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.slime
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.spider
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.stray
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.vex
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.vindication_illager
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.witch
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wither
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wither_skeleton
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.wolf
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie_pigman
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.imitate.zombie_villager
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.parrot.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.saddle
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.pig.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.crit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.knockback
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.nodamage
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.strong
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.sweep
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.attack.weak
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.big_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.breath
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.burp
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt_drown
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.hurt_on_fire
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.levelup
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.small_fall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.splash
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.player.swim
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.baby_ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.polar_bear.warning
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.rabbit.jump
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.shear
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.sheep.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.close
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.hurt_closed
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.open
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker.teleport
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker_bullet.hit
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.shulker_bullet.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.silverfish.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.skeleton_horse.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.attack
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.jump
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.slime.squish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_magmacube.squish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.jump
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.small_slime.squish
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowball.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.snowman.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.spider.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.splash_potion.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.splash_potion.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.squid.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.stray.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.tnt.primed
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.charge
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vex.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.no
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.trading
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.villager.yes
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.vindication_illager.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.drink
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.witch.throw
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.break_block
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.shoot
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither.spawn
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wither_skeleton.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.growl
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.howl
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.pant
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.shake
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.wolf.whine
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.attack_door_wood
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.attack_iron_door
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.break_door_wood
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.infect
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_horse.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.angry
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_pig.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.ambient
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.converted
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.cure
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.death
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.hurt
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:entity.zombie_villager.step
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_chain
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_diamond
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_elytra
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_generic
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_gold
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_iron
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.armor.equip_leather
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.empty
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.fill
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bottle.fill_dragonbreath
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.empty
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.empty_lava
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.fill
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.bucket.fill_lava
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.chorus_fruit.teleport
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.elytra.flying
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.firecharge.use
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.flintandsteel.use
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.hoe.till
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.shield.block
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.shield.break
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.shovel.flatten
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:item.totem.use
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.creative
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.credits
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.dragon
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.end
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.game
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.menu
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:music.nether
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.11
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.13
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.blocks
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.cat
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.chirp
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.far
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.mall
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.mellohi
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.stal
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.strad
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.wait
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:record.ward
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:ui.button.click
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.in
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.out
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:ui.toast.challenge_complete
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:weather.rain
+[22:30:07] [Client thread/WARN]: Missing sound for event: minecraft:weather.rain.above
+[22:30:08] [Sound Library Loader/INFO]: Starting up SoundSystem...
+[22:30:08] [Thread-3/INFO]: Initializing LWJGL OpenAL
+[22:30:08] [Thread-3/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[22:30:08] [Thread-3/INFO]: OpenAL initialized.
+[22:30:08] [Sound Library Loader/INFO]: Sound engine started
+[22:30:13] [Client thread/INFO]: Created: 1024x512 textures-atlas
+[22:30:18] [Client thread/INFO]: Narrator library for x64 successfully loaded
+[22:30:25] [Server thread/INFO]: Starting integrated minecraft server version 1.12
+[22:30:25] [Server thread/INFO]: Generating keypair
+[22:30:26] [Server thread/INFO]: Loaded 488 advancements
+[22:30:27] [Server thread/INFO]: Preparing start region for level 0
+[22:30:28] [Server thread/INFO]: Preparing spawn area: 0%
+[22:30:30] [Server thread/INFO]: Changing view distance to 8, from 10
+[22:30:51] [Client thread/DEBUG]: Set listener of net.minecraft.network.NetworkManager@38dde7ec to net.minecraft.client.network.NetHandlerLoginClient@3bc57af4
+[22:30:52] [Netty Server IO #1/DEBUG]: Set listener of net.minecraft.network.NetworkManager@a0c5f04 to net.minecraft.client.network.NetHandlerHandshakeMemory@c530ef0
+[22:30:52] [Netty Server IO #1/DEBUG]: Enabled auto read
+[22:30:52] [Netty Local Client IO #0/DEBUG]: Enabled auto read
+[22:30:52] [Client thread/DEBUG]: Disabled auto read
+[22:30:52] [Netty Local Client IO #0/DEBUG]: Enabled auto read
+[22:30:52] [Netty Server IO #1/DEBUG]: Enabled auto read
+[22:30:52] [Netty Server IO #1/DEBUG]: Set listener of net.minecraft.network.NetworkManager@a0c5f04 to net.minecraft.server.network.NetHandlerLoginServer@1a729a1f
+[22:30:52] [Netty Local Client IO #0/DEBUG]: Enabled auto read
+[22:30:52] [Netty Local Client IO #0/DEBUG]: Set listener of net.minecraft.network.NetworkManager@38dde7ec to net.minecraft.client.network.NetHandlerPlayClient@2390f9d
+[22:30:53] [Server thread/DEBUG]: loading single player
+[22:30:53] [Server thread/INFO]: Player697[local:E:7473bdf9] logged in with entity id 286 at (73.07519846601258, 83.53292827534491, 242.70617976761906)
+[22:30:53] [Server thread/DEBUG]: Set listener of net.minecraft.network.NetworkManager@a0c5f04 to net.minecraft.network.NetHandlerPlayServer@7cfed0d5
+[22:30:53] [Server thread/DEBUG]: Disabled auto read
+[22:30:53] [Netty Server IO #1/DEBUG]: Enabled auto read
+[22:30:53] [Server thread/INFO]: Player697 joined the game
+[22:30:54] [Server thread/INFO]: Saving and pausing game...
+[22:30:54] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:30:54] [Client thread/INFO]: Loaded 6 advancements
+[22:30:55] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:30:55] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:31:11] [Client thread/INFO]: Loaded 12 advancements
+[22:31:29] [Client thread/INFO]: [CHAT] Player 'Blokyk' cannot be found
+[22:31:31] [Client thread/INFO]: [CHAT] minecraft:wooden_axe, minecraft:wooden_button, minecraft:wooden_door, minecraft:wooden_hoe, minecraft:wooden_pickaxe, minecraft:wooden_pressure_plate, minecraft:wooden_shovel, minecraft:wooden_slab, minecraft:wooden_sword
+[22:31:32] [Client thread/INFO]: [CHAT] Player 'Blokyk' cannot be found
+[22:31:33] [Server thread/INFO]: Saving and pausing game...
+[22:31:33] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:31:34] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:31:34] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:31:43] [Server thread/INFO]: [Player697: Given [Wooden Axe] * 1 to Player697]
+[22:31:43] [Client thread/INFO]: [CHAT] Given [Wooden Axe] * 1 to Player697
+[22:31:45] [Server thread/INFO]: Saving and pausing game...
+[22:31:45] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:31:45] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:31:45] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:31:50] [Server thread/INFO]: [Player697: Given [Wooden Axe] * 1 to Player697]
+[22:31:50] [Client thread/INFO]: [CHAT] Given [Wooden Axe] * 1 to Player697
+[22:31:58] [Client thread/INFO]: [CHAT] Player 'Player698' cannot be found
+[22:32:00] [Server thread/INFO]: Saving and pausing game...
+[22:32:01] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:32:01] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:32:01] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:37:35] [Chunk Batcher 2/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[22:37:35] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[22:37:37] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[22:37:38] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[22:37:40] [Chunk Batcher 1/DEBUG]: Needed to grow BufferBuilder buffer: Old size 524288 bytes, new size 2621440 bytes.
+[22:39:38] [Server thread/INFO]: Saving and pausing game...
+[22:39:38] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:39:38] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:39:38] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:40:01] [Server thread/INFO]: Saving and pausing game...
+[22:40:01] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:40:01] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:40:01] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:40:21] [Server thread/INFO]: Saving and pausing game...
+[22:40:22] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:40:22] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:40:22] [Server thread/INFO]: Saving chunks for level 'test2'/the_end
+[22:43:58] [Server thread/INFO]: [Player697: Set the time to 1000]
+[22:43:58] [Client thread/INFO]: [CHAT] Set the time to 1000
+[22:44:04] [Server thread/INFO]: [Player697: Game rule doDaylightCycle has been updated to false]
+[22:44:04] [Client thread/INFO]: [CHAT] Game rule doDaylightCycle has been updated to false
+[22:44:21] [Client thread/INFO]: [CHAT] Invalid selector argument: 'type!=Player'
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie Villager]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.tile.mushroom]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie Villager
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.tile.mushroom
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Enderman]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Squid]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Enderman
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Squid
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.tile.flower2.poppy]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.item.seeds]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Pig]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.tile.flower2.houstonia]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.tile.flower2.poppy]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.tile.flower2.poppy
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.item.seeds
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Pig
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.tile.flower2.houstonia
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.tile.flower2.poppy
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.tile.flower2.tulipOrange]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Sheep]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.item.egg]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed item.item.egg]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Chicken]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Server thread/INFO]: [Player697: Killed Rabbit]
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.tile.flower2.tulipOrange
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Sheep
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.item.egg
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed item.item.egg
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Chicken
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:26] [Client thread/INFO]: [CHAT] Killed Rabbit
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Spider]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie Villager]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Spider
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.enderPearl]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.dyePowder.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.feather]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.feather]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.porkchopRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie Villager
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.enderPearl
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.dyePowder.black
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.black]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.white]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.muttonRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.tile.cloth.brown]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.feather
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.feather]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.feather]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.feather
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.chickenRaw]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Server thread/INFO]: [Player697: Killed item.item.rabbitHide]
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.porkchopRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.black
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.white
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.muttonRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.tile.cloth.brown
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.feather
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.feather
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.chickenRaw
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:28] [Client thread/INFO]: [CHAT] Killed item.item.rabbitHide
+[22:44:34] [Client thread/INFO]: [CHAT] doMobLoot, doMobSpawning
+[22:44:34] [Client thread/INFO]: [CHAT] doMobLoot, doMobSpawning
+[22:44:36] [Server thread/INFO]: [Player697: Game rule doMobSpawning has been updated to false]
+[22:44:36] [Client thread/INFO]: [CHAT] Game rule doMobSpawning has been updated to false
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.string]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie Villager]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie Villager]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Witch]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Bat]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Witch]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Creeper]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Zombie]
+[22:44:38] [Server thread/INFO]: [Player697: Killed Skeleton]
+[22:44:38] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.string
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie Villager
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie Villager
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Witch
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Bat
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Witch
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Creeper
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Zombie
+[22:44:38] [Client thread/INFO]: [CHAT] Killed Skeleton
+[22:44:38] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.stick]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.sulphur]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.redstone]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.rottenFlesh]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.arrow]
+[22:44:39] [Server thread/INFO]: [Player697: Killed item.item.bone]
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.stick
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.sulphur
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.redstone
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.rottenFlesh
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.arrow
+[22:44:39] [Client thread/INFO]: [CHAT] Killed item.item.bone
+[22:44:40] [Client thread/INFO]: [CHAT] Selector '@e[type=!Player]' found nothing
+[22:44:42] [Client thread/INFO]: [CHAT] Selector '@e[type=!Player]' found nothing
+[22:44:58] [Server thread/INFO]: Saving and pausing game...
+[22:44:58] [Server thread/INFO]: Saving chunks for level 'test2'/overworld
+[22:44:58] [Server thread/INFO]: Saving chunks for level 'test2'/the_nether
+[22:44:58] [Server thread/INFO]: Saving chunks for level 'test2'/the_end

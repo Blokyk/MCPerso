@@ -2,9 +2,9 @@ package net.minecraft.command;
 
 public class PlayerNotFoundException extends CommandException
 {
-    public PlayerNotFoundException(String p_i47330_1_)
+    public PlayerNotFoundException(String playerName)
     {
-        super(p_i47330_1_);
+        super(playerName);
     }
 
     public PlayerNotFoundException(String message, Object... replacements)
