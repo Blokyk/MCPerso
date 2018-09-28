@@ -1,9 +1,7 @@
 *.bat
 
-eclipse/.metadata/*
+/logs/*
+/eclipse/.metadata*
+/eclipse/.recommenders*
 
 nano.exe.stackdump
-
-*/.git/*
-
-.git
