@@ -1,7 +1,8 @@
 *.bat
 
-/logs/*
-/eclipse/.metadata*
-/eclipse/.recommenders*
+logs**
+eclipse/**/.classpath
+eclipse/.metadata*
+eclipse/.recommenders*
 
-nano.exe.stackdump
+*nano.exe.stackdump
