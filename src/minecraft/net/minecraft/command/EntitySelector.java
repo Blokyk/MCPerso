@@ -399,31 +399,44 @@ public class EntitySelector
     private static List<Predicate<Entity>> getTeamPredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
-        String s = getArgument(params, TEAM);
-        final boolean flag = s != null && s.startsWith("!");
+        String teamArgument = getArgument(params, TEAM);
+        final boolean NOTFlag = teamArgument != null && teamArgument.startsWith("!");
 
-        if (flag)
+        if (NOTFlag)
         {
-            s = s.substring(1);
+            teamArgument = teamArgument.substring(1);
         }
 
-        if (s != null)
+        if (teamArgument != null)
         {
-            final String s_f_ = s;
+            final String teamArgument1 = teamArgument;
             list.add(new Predicate<Entity>()
             {
-                public boolean apply(@Nullable Entity p_apply_1_)
+                public boolean apply(@Nullable Entity entity)
                 {
-                    if (!(p_apply_1_ instanceof EntityLivingBase))
+                    if (!(entity instanceof EntityLivingBase))
                     {
                         return false;
                     }
                     else
                     {
-                        EntityLivingBase entitylivingbase = (EntityLivingBase)p_apply_1_;
+                        EntityLivingBase entitylivingbase = (EntityLivingBase)entity;
                         Team team = entitylivingbase.getTeam();
-                        String s1 = team == null ? "" : team.getRegisteredName();
-                        return s1.equals(s_f_) != flag;
+                        String teamName = team == null ? "" : team.getRegisteredName();
+                        
+                        // If the team's name are equal, and that the not flag (to invert the output of a filter (example : @e[type=!Player] will return/select every entity which is not a Player)) is set to false, the
+                        
+                        if (!NOTFlag) {
+							if (teamName == teamArgument1) {
+								return true;
+							}
+						} else {
+							if (teamName != teamArgument1) {
+								return true;
+							}
+						}
+                        
+                        return false;
                     }
                 }
             });

@@ -1,5 +1,0 @@
-package net.minecraft.client.util;
-
-public class Logger {
-
-}
