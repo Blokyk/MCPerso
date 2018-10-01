@@ -21,35 +21,35 @@ public class FunctionObject
         return this.field_193530_b;
     }
 
-    public static FunctionObject func_193527_a(FunctionManager p_193527_0_, List<String> p_193527_1_)
+    public static FunctionObject func_193527_a(FunctionManager funcManager, List<String> lines)
     {
-        List<FunctionObject.Entry> list = Lists.<FunctionObject.Entry>newArrayListWithCapacity(p_193527_1_.size());
+        List<FunctionObject.Entry> list = Lists.<FunctionObject.Entry>newArrayListWithCapacity(lines.size());
 
-        for (String s : p_193527_1_)
+        for (String line : lines)
         {
-            s = s.trim();
+            line = line.trim();
 
-            if (!s.startsWith("#") && !s.isEmpty())
+            if (!line.startsWith("#") && !line.isEmpty())
             {
-                String[] astring = s.split(" ", 2);
-                String s1 = astring[0];
+                String[] commandAndArgument = line.split(" ", 2);
+                String command = commandAndArgument[0];
 
-                if (!p_193527_0_.getCommandManager().getCommands().containsKey(s1))
+                if (!funcManager.getCommandManager().getCommands().containsKey(command))
                 {
-                    if (s1.startsWith("//"))
+                    if (command.startsWith("//"))
                     {
-                        throw new IllegalArgumentException("Unknown or invalid command '" + s1 + "' (if you intended to make a comment, use '#' not '//')");
+                        throw new IllegalArgumentException("Unknown or invalid command '" + command + "' (if you intended to make a comment, use '#' not '//')");
                     }
 
-                    if (s1.startsWith("/") && s1.length() > 1)
+                    if (command.startsWith("/") && command.length() > 1)
                     {
-                        throw new IllegalArgumentException("Unknown or invalid command '" + s1 + "' (did you mean '" + s1.substring(1) + "'? Do not use a preceding forwards slash.)");
+                        throw new IllegalArgumentException("Unknown or invalid command '" + command + "' (did you mean '" + command.substring(1) + "'? Do not use a preceding forwards slash.)");
                     }
 
-                    throw new IllegalArgumentException("Unknown or invalid command '" + s1 + "'");
+                    throw new IllegalArgumentException("Unknown or invalid command '" + command + "'");
                 }
 
-                list.add(new FunctionObject.CommandEntry(s));
+                list.add(new FunctionObject.CommandEntry(line));
             }
         }
 
@@ -60,29 +60,29 @@ public class FunctionObject
     {
         public static final FunctionObject.CacheableFunction field_193519_a = new FunctionObject.CacheableFunction((ResourceLocation)null);
         @Nullable
-        private final ResourceLocation field_193520_b;
+        private final ResourceLocation location;
         private boolean field_193521_c;
         private FunctionObject field_193522_d;
 
-        public CacheableFunction(@Nullable ResourceLocation p_i47537_1_)
+        public CacheableFunction(@Nullable ResourceLocation ressourceLocation)
         {
-            this.field_193520_b = p_i47537_1_;
+            this.location = ressourceLocation;
         }
 
         public CacheableFunction(FunctionObject p_i47602_1_)
         {
-            this.field_193520_b = null;
+            this.location = null;
             this.field_193522_d = p_i47602_1_;
         }
 
         @Nullable
-        public FunctionObject func_193518_a(FunctionManager p_193518_1_)
+        public FunctionObject func_193518_a(FunctionManager funcManager)
         {
             if (!this.field_193521_c)
             {
-                if (this.field_193520_b != null)
+                if (this.location != null)
                 {
-                    this.field_193522_d = p_193518_1_.getFunctionByName(this.field_193520_b);
+                    this.field_193522_d = funcManager.getFunctionByName(this.location);
                 }
 
                 this.field_193521_c = true;
@@ -93,7 +93,7 @@ public class FunctionObject
 
         public String toString()
         {
-            return String.valueOf((Object)this.field_193520_b);
+            return String.valueOf((Object)this.location);
         }
     }
 

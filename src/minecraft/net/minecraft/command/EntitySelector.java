@@ -103,7 +103,7 @@ public class EntitySelector
         	
         	return false;
         	
-        	// This is the one-liner that was here before :
+        	// This is the original one-liner :
             // return filter != null && (EntitySelector.parameterSet.contains(filter) || filter.length() > "score_".length() && filter.startsWith("score_"));
         }
     };
@@ -165,6 +165,7 @@ public class EntitySelector
     public static <T extends Entity> List<T> matchEntities(ICommandSender sender, String token, Class <? extends T > targetClass) throws CommandException
     {
         Matcher matcher = TOKEN_PATTERN.matcher(token);
+        
 
         if (matcher.matches() && sender.canCommandSenderUseCommand(1, "@"))
         {
@@ -188,7 +189,7 @@ public class EntitySelector
                     {
                         List<Predicate<Entity>> list2 = Lists.<Predicate<Entity>>newArrayList();
                         list2.addAll(getTypePredicates(map, s));
-                        list2.addAll(getXpLevelPredicates(map));
+                        list2.addAll(getXPLevelPredicates(map));
                         list2.addAll(getGamemodePredicates(map));
                         list2.addAll(getTeamPredicates(map));
                         list2.addAll(getScorePredicates(sender, map));
@@ -313,7 +314,7 @@ public class EntitySelector
         }
     }
 
-    private static List<Predicate<Entity>> getXpLevelPredicates(Map<String, String> params)
+    private static List<Predicate<Entity>> getXPLevelPredicates(Map<String, String> params)
     {
         List<Predicate<Entity>> list = Lists.<Predicate<Entity>>newArrayList();
         final int i = getInt(params, LM, -1);

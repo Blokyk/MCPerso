@@ -141,19 +141,19 @@ public final class EntitySelectors
             this.armor = armor;
         }
 
-        public boolean apply(@Nullable Entity p_apply_1_)
+        public boolean apply(@Nullable Entity entity)
         {
-            if (!p_apply_1_.isEntityAlive())
+            if (!entity.isEntityAlive())
             {
                 return false;
             }
-            else if (!(p_apply_1_ instanceof EntityLivingBase))
+            else if (!(entity instanceof EntityLivingBase))
             {
                 return false;
             }
             else
             {
-                EntityLivingBase entitylivingbase = (EntityLivingBase)p_apply_1_;
+                EntityLivingBase entitylivingbase = (EntityLivingBase)entity;
 
                 if (!entitylivingbase.getItemStackFromSlot(EntityLiving.getSlotForItemStack(this.armor)).isNull())
                 {
