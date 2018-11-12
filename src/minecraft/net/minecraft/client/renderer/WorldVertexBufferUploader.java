@@ -7,7 +7,8 @@ import net.minecraft.client.renderer.vertex.VertexFormatElement;
 
 public class WorldVertexBufferUploader
 {
-    public void draw(BufferBuilder vertexBufferIn)
+    @SuppressWarnings("incomplete-switch")
+	public void draw(BufferBuilder vertexBufferIn)
     {
         if (vertexBufferIn.getVertexCount() > 0)
         {

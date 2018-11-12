@@ -697,6 +697,7 @@ public abstract class Entity implements ICommandSender
      */
     protected void kill()
     {
+    	addChatMessage(new TextComponentString("kill command detected"));
         this.setDead();
     }
 

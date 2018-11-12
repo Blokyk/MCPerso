@@ -44,11 +44,11 @@ public class GuiIngameMenu extends GuiScreen
     {
         switch (button.id)
         {
-            case 0:
+            case 0: // Options button
                 this.mc.displayGuiScreen(new GuiOptions(this, this.mc.gameSettings));
                 break;
 
-            case 1:
+            case 1: // Save and Quit to title
                 boolean flag = this.mc.isIntegratedServerRunning();
                 boolean flag1 = this.mc.isConnectedToRealms();
                 button.enabled = false;
@@ -69,25 +69,25 @@ public class GuiIngameMenu extends GuiScreen
                     this.mc.displayGuiScreen(new GuiMultiplayer(new GuiMainMenu()));
                 }
 
-            case 2:
-            case 3:
-            default:
+            case 2: // Apparently useless, only activate after quitting
+            case 3: // Apparently useless, only activate after quitting
+            default: // Apparently useless, only activate after quitting
                 break;
 
-            case 4:
+            case 4: // Back to game button
                 this.mc.displayGuiScreen((GuiScreen)null);
                 this.mc.setIngameFocus();
                 break;
 
-            case 5:
+            case 5: // Advancements button
                 this.mc.displayGuiScreen(new GuiScreenAdvancements(this.mc.player.connection.func_191982_f()));
                 break;
 
-            case 6:
+            case 6: // Stats button
                 this.mc.displayGuiScreen(new GuiStats(this, this.mc.player.getStatFileWriter()));
                 break;
 
-            case 7:
+            case 7: // Open to LAN button
                 this.mc.displayGuiScreen(new GuiShareToLan(this));
         }
     }

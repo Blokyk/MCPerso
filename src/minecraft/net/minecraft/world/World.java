@@ -2284,7 +2284,7 @@ public abstract class World implements IBlockAccess
      */
     public Explosion createExplosion(@Nullable Entity entityIn, double x, double y, double z, float strength, boolean isSmoking)
     {
-        return this.newExplosion(entityIn, x, y, z, strength, false, isSmoking);
+        return this.newExplosion(entityIn, x, y, z, strength, true, isSmoking);
     }
 
     /**

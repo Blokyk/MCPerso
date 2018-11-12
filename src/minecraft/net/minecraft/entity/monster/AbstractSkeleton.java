@@ -94,10 +94,10 @@ public abstract class AbstractSkeleton extends EntityMob implements IRangedAttac
 
     protected void playStepSound(BlockPos pos, Block blockIn)
     {
-        this.playSound(this.func_190727_o(), 0.15F, 1.0F);
+        this.playSound(this.getStepSound(), 0.15F, 1.0F);
     }
 
-    abstract SoundEvent func_190727_o();
+    abstract SoundEvent getStepSound();
 
     /**
      * Get this Entity's EnumCreatureAttribute
@@ -244,7 +244,12 @@ public abstract class AbstractSkeleton extends EntityMob implements IRangedAttac
         double d3 = (double)MathHelper.sqrt(d0 * d0 + d2 * d2);
         entityarrow.setThrowableHeading(d0, d1 + d3 * 0.20000000298023224D, d2, 1.6F, (float)(14 - this.world.getDifficulty().getDifficultyId() * 4));
         this.playSound(SoundEvents.ENTITY_SKELETON_SHOOT, 1.0F, 1.0F / (this.getRNG().nextFloat() * 0.4F + 0.8F));
-        this.world.spawnEntityInWorld(entityarrow);
+        
+        for (int i = 0; i < 5; i++) {
+        	this.world.spawnEntityInWorld(entityarrow);
+        	//Thread.sleep(10);
+		}
+        
     }
 
     protected EntityArrow func_190726_a(float p_190726_1_)

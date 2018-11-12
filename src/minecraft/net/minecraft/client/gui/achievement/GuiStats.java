@@ -114,30 +114,37 @@ public class GuiStats extends GuiScreen implements IProgressMeter
      */
     protected void actionPerformed(GuiButton button) throws IOException
     {
+    	//mc.LOGGER.debug(button.toString());
         if (button.enabled)
         {
             if (button.id == 0)
             {
+            	mc.LOGGER.debug("This is button 0");
                 this.mc.displayGuiScreen(this.parentScreen);
             }
             else if (button.id == 1)
             {
+            	mc.LOGGER.debug("This is button 1");
                 this.displaySlot = this.generalStats;
             }
             else if (button.id == 3)
             {
+            	mc.LOGGER.debug("This is button 3");
                 this.displaySlot = this.itemStats;
             }
-            else if (button.id == 2)
+            else if (button.id == 2) // This is the Block stat button
             {
+            	mc.LOGGER.debug("This is button 2");
                 this.displaySlot = this.blockStats;
             }
             else if (button.id == 4)
             {
+            	mc.LOGGER.debug("This is button 4");
                 this.displaySlot = this.mobStats;
             }
             else
             {
+            	mc.LOGGER.debug("This isn't a button, you creep");
                 this.displaySlot.actionPerformed(button);
             }
         }

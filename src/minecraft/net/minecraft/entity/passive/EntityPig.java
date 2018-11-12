@@ -269,15 +269,15 @@ public class EntityPig extends EntityAnimal
         }
     }
 
-    public void func_191986_a(float p_191986_1_, float p_191986_2_, float p_191986_3_)
+    public void func_191986_a(float xMov, float yMov, float zMov)
     {
-        Entity entity = this.getPassengers().isEmpty() ? null : (Entity)this.getPassengers().get(0);
+        Entity passenger = this.getPassengers().isEmpty() ? null : (Entity)this.getPassengers().get(0);
 
         if (this.isBeingRidden() && this.canBeSteered())
         {
-            this.rotationYaw = entity.rotationYaw;
+            this.rotationYaw = passenger.rotationYaw;
             this.prevRotationYaw = this.rotationYaw;
-            this.rotationPitch = entity.rotationPitch * 0.5F;
+            this.rotationPitch = passenger.rotationPitch * 0.5F;
             this.setRotation(this.rotationYaw, this.rotationPitch);
             this.renderYawOffset = this.rotationYaw;
             this.rotationYawHead = this.rotationYaw;
@@ -291,14 +291,14 @@ public class EntityPig extends EntityAnimal
 
             if (this.canPassengerSteer())
             {
-                float f = (float)this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getAttributeValue() * 0.225F;
+                float moveSpeed = (float)this.getEntityAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getAttributeValue() * 0.225F;
 
                 if (this.boosting)
                 {
-                    f += f * 1.15F * MathHelper.sin((float)this.boostTime / (float)this.totalBoostTime * (float)Math.PI);
+                    moveSpeed += moveSpeed * 1.15F * MathHelper.sin((float)this.boostTime / (float)this.totalBoostTime * (float)Math.PI);
                 }
 
-                this.setAIMoveSpeed(f);
+                this.setAIMoveSpeed(moveSpeed);
                 super.func_191986_a(0.0F, 0.0F, 1.0F);
             }
             else
@@ -325,7 +325,7 @@ public class EntityPig extends EntityAnimal
         {
             this.stepHeight = 0.5F;
             this.jumpMovementFactor = 0.02F;
-            super.func_191986_a(p_191986_1_, p_191986_2_, p_191986_3_);
+            super.func_191986_a(xMov, yMov, zMov);
         }
     }
 

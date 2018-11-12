@@ -264,10 +264,10 @@ public class GuiRecipeBook extends Gui implements IRecipeUpdateListener
 
             for (GuiButtonRecipeTab guibuttonrecipetab : this.field_193018_j)
             {
-                guibuttonrecipetab.func_191745_a(this.field_191888_F, p_191861_1_, p_191861_2_, p_191861_3_);
+                guibuttonrecipetab.drawButton(this.field_191888_F, p_191861_1_, p_191861_2_, p_191861_3_);
             }
 
-            this.field_193960_m.func_191745_a(this.field_191888_F, p_191861_1_, p_191861_2_, p_191861_3_);
+            this.field_193960_m.drawButton(this.field_191888_F, p_191861_1_, p_191861_2_, p_191861_3_);
             this.field_193022_s.func_194191_a(i, j, p_191861_1_, p_191861_2_, p_191861_3_);
             GlStateManager.popMatrix();
         }

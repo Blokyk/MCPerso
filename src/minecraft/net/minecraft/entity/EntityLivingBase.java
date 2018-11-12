@@ -1179,9 +1179,9 @@ public abstract class EntityLivingBase extends Entity
         }
     }
 
-    protected void func_190629_c(EntityLivingBase p_190629_1_)
+    protected void func_190629_c(EntityLivingBase entity)
     {
-        p_190629_1_.knockBack(this, 0.5F, this.posX - p_190629_1_.posX, this.posZ - p_190629_1_.posZ);
+        entity.knockBack(this, 0.5F, this.posX - entity.posX, this.posZ - entity.posZ);
     }
 
     private boolean func_190628_d(DamageSource p_190628_1_)
@@ -1198,7 +1198,7 @@ public abstract class EntityLivingBase extends Entity
             {
                 ItemStack itemstack1 = this.getHeldItem(enumhand);
 
-                if (itemstack1.getItem() == Items.field_190929_cY)
+                if (itemstack1.getItem() == Items.TOTEM_OF_UNDYING)
                 {
                     itemstack = itemstack1.copy();
                     itemstack1.func_190918_g(1);
@@ -1211,7 +1211,7 @@ public abstract class EntityLivingBase extends Entity
                 if (this instanceof EntityPlayerMP)
                 {
                     EntityPlayerMP entityplayermp = (EntityPlayerMP)this;
-                    entityplayermp.addStat(StatList.getObjectUseStats(Items.field_190929_cY));
+                    entityplayermp.addStat(StatList.getObjectUseStats(Items.TOTEM_OF_UNDYING));
                     CriteriaTriggers.usedTotemTrigger.func_193187_a(entityplayermp, itemstack);
                 }
 

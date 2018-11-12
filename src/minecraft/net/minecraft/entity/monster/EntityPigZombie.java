@@ -42,7 +42,7 @@ public class EntityPigZombie extends EntityZombie
     public EntityPigZombie(World worldIn)
     {
         super(worldIn);
-        this.isImmuneToFire = true;
+        this.isImmuneToFire = false;
     }
 
     public void setRevengeTarget(@Nullable EntityLivingBase livingBase)

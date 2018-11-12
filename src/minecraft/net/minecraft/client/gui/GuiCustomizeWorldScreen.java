@@ -1020,8 +1020,8 @@ public class GuiCustomizeWorldScreen extends GuiScreen implements GuiSlider.Form
             this.drawCenteredString(this.fontRendererObj, I18n.format("createWorld.customize.custom.confirmTitle"), this.width / 2, 105, 16777215);
             this.drawCenteredString(this.fontRendererObj, I18n.format("createWorld.customize.custom.confirm1"), this.width / 2, 125, 16777215);
             this.drawCenteredString(this.fontRendererObj, I18n.format("createWorld.customize.custom.confirm2"), this.width / 2, 135, 16777215);
-            this.confirm.func_191745_a(this.mc, mouseX, mouseY, partialTicks);
-            this.cancel.func_191745_a(this.mc, mouseX, mouseY, partialTicks);
+            this.confirm.drawButton(this.mc, mouseX, mouseY, partialTicks);
+            this.cancel.drawButton(this.mc, mouseX, mouseY, partialTicks);
         }
     }
 }

@@ -624,19 +624,19 @@ public class GuiScreenBook extends GuiScreen
     {
         private final boolean isForward;
 
-        public NextPageButton(int p_i46316_1_, int p_i46316_2_, int p_i46316_3_, boolean p_i46316_4_)
+        public NextPageButton(int buttonId, int xPos, int yPos, boolean isForward)
         {
-            super(p_i46316_1_, p_i46316_2_, p_i46316_3_, 23, 13, "");
-            this.isForward = p_i46316_4_;
+            super(buttonId, xPos, yPos, 23, 13, "");
+            this.isForward = isForward;
         }
 
-        public void func_191745_a(Minecraft p_191745_1_, int p_191745_2_, int p_191745_3_, float p_191745_4_)
+        public void drawButton(Minecraft mcInstance, int xPosIGuess, int yPosIGuess, float partialTicksIGuess)
         {
             if (this.visible)
             {
-                boolean flag = p_191745_2_ >= this.xPosition && p_191745_3_ >= this.yPosition && p_191745_2_ < this.xPosition + this.width && p_191745_3_ < this.yPosition + this.height;
+                boolean flag = xPosIGuess >= this.xPosition && yPosIGuess >= this.yPosition && xPosIGuess < this.xPosition + this.width && yPosIGuess < this.yPosition + this.height;
                 GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-                p_191745_1_.getTextureManager().bindTexture(GuiScreenBook.BOOK_GUI_TEXTURES);
+                mcInstance.getTextureManager().bindTexture(GuiScreenBook.BOOK_GUI_TEXTURES);
                 int i = 0;
                 int j = 192;
 

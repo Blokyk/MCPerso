@@ -112,9 +112,9 @@ public class GuiScreenOptionsSounds extends GuiScreen
         public float volume = 1.0F;
         public boolean pressed;
 
-        public Button(int p_i46744_2_, int x, int y, SoundCategory categoryIn, boolean master)
+        public Button(int buttonId, int x, int y, SoundCategory categoryIn, boolean master)
         {
-            super(p_i46744_2_, x, y, master ? 310 : 150, 20, "");
+            super(buttonId, x, y, master ? 310 : 150, 20, "");
             this.category = categoryIn;
             this.categoryName = I18n.format("soundCategory." + categoryIn.getName());
             this.displayString = this.categoryName + ": " + GuiScreenOptionsSounds.this.getDisplayString(categoryIn);

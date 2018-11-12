@@ -16,7 +16,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
     private String message = "";
 
     /** A reference to the Minecraft object. */
-    private final Minecraft mc;
+    private final Minecraft mcInstance;
 
     /**
      * The text currently displayed (i.e. the argument to the last call to printText or displayString)
@@ -31,17 +31,17 @@ public class LoadingScreenRenderer implements IProgressUpdate
     private final ScaledResolution scaledResolution;
     private final Framebuffer framebuffer;
 
-    public LoadingScreenRenderer(Minecraft mcIn)
+    public LoadingScreenRenderer(Minecraft mcInstance)
     {
-        this.mc = mcIn;
-        this.scaledResolution = new ScaledResolution(mcIn);
-        this.framebuffer = new Framebuffer(mcIn.displayWidth, mcIn.displayHeight, false);
+        this.mcInstance = mcInstance;
+        this.scaledResolution = new ScaledResolution(mcInstance);
+        this.framebuffer = new Framebuffer(mcInstance.displayWidth, mcInstance.displayHeight, false);
         this.framebuffer.setFramebufferFilter(9728);
     }
 
     /**
-     * this string, followed by "working..." and then the "% complete" are the 3 lines shown. This resets progress to 0,
-     * and the WorkingString to "working...".
+     * This resets progress to 0, and the WorkingString to message + "working...".
+     * @param message This string, followed by "working..." and then the "% complete" are the 3 lines shown.
      */
     public void resetProgressAndMessage(String message)
     {
@@ -60,9 +60,10 @@ public class LoadingScreenRenderer implements IProgressUpdate
 
     private void displayString(String message)
     {
+    	//mcInstance.LOGGER.debug("message is : " + message);
         this.currentlyDisplayedText = message;
 
-        if (!this.mc.running)
+        if (!this.mcInstance.running)
         {
             if (!this.loadingSuccess)
             {
@@ -82,7 +83,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
             }
             else
             {
-                ScaledResolution scaledresolution = new ScaledResolution(this.mc);
+                ScaledResolution scaledresolution = new ScaledResolution(this.mcInstance);
                 GlStateManager.ortho(0.0D, scaledresolution.getScaledWidth_double(), scaledresolution.getScaledHeight_double(), 0.0D, 100.0D, 300.0D);
             }
 
@@ -97,7 +98,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
      */
     public void displayLoadingString(String message)
     {
-        if (!this.mc.running)
+        if (!this.mcInstance.running)
         {
             if (!this.loadingSuccess)
             {
@@ -118,7 +119,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
      */
     public void setLoadingProgress(int progress)
     {
-        if (!this.mc.running)
+        if (!this.mcInstance.running)
         {
             if (!this.loadingSuccess)
             {
@@ -132,7 +133,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
             if (i - this.systemTime >= 100L)
             {
                 this.systemTime = i;
-                ScaledResolution scaledresolution = new ScaledResolution(this.mc);
+                ScaledResolution scaledresolution = new ScaledResolution(this.mcInstance);
                 int j = scaledresolution.getScaleFactor();
                 int k = scaledresolution.getScaledWidth();
                 int l = scaledresolution.getScaledHeight();
@@ -161,7 +162,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
 
                 Tessellator tessellator = Tessellator.getInstance();
                 BufferBuilder bufferbuilder = tessellator.getBuffer();
-                this.mc.getTextureManager().bindTexture(Gui.OPTIONS_BACKGROUND);
+                this.mcInstance.getTextureManager().bindTexture(Gui.OPTIONS_BACKGROUND);
                 float f = 32.0F;
                 bufferbuilder.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
                 bufferbuilder.pos(0.0D, (double)l, 0.0D).tex(0.0D, (double)((float)l / 32.0F)).color(64, 64, 64, 255).endVertex();
@@ -192,8 +193,8 @@ public class LoadingScreenRenderer implements IProgressUpdate
 
                 GlStateManager.enableBlend();
                 GlStateManager.tryBlendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA, GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-                this.mc.fontRendererObj.drawStringWithShadow(this.currentlyDisplayedText, (float)((k - this.mc.fontRendererObj.getStringWidth(this.currentlyDisplayedText)) / 2), (float)(l / 2 - 4 - 16), 16777215);
-                this.mc.fontRendererObj.drawStringWithShadow(this.message, (float)((k - this.mc.fontRendererObj.getStringWidth(this.message)) / 2), (float)(l / 2 - 4 + 8), 16777215);
+                this.mcInstance.fontRendererObj.drawStringWithShadow(this.currentlyDisplayedText, (float)((k - this.mcInstance.fontRendererObj.getStringWidth(this.currentlyDisplayedText)) / 2), (float)(l / 2 - 4 - 16), 16777215);
+                this.mcInstance.fontRendererObj.drawStringWithShadow(this.message, (float)((k - this.mcInstance.fontRendererObj.getStringWidth(this.message)) / 2), (float)(l / 2 - 4 + 8), 16777215);
                 this.framebuffer.unbindFramebuffer();
 
                 if (OpenGlHelper.isFramebufferEnabled())
@@ -201,7 +202,7 @@ public class LoadingScreenRenderer implements IProgressUpdate
                     this.framebuffer.framebufferRender(k * j, l * j);
                 }
 
-                this.mc.updateDisplay();
+                this.mcInstance.updateDisplay();
 
                 try
                 {

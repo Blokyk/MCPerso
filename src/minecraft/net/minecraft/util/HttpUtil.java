@@ -134,7 +134,7 @@ public class HttpUtil
         }
     }
 
-    public static ListenableFuture<Object> downloadResourcePack(final File saveFile, final String packUrl, final Map<String, String> p_180192_2_, final int maxSize, @Nullable final IProgressUpdate p_180192_4_, final Proxy p_180192_5_)
+    public static ListenableFuture<Object> downloadResourcePack(final File saveFile, final String packUrl, final Map<String, String> p_180192_2_, final int maxSize, @Nullable final IProgressUpdate iProgressUpdate, final Proxy p_180192_5_)
     {
         ListenableFuture<?> listenablefuture = DOWNLOADER_EXECUTOR.submit(new Runnable()
         {
@@ -144,10 +144,10 @@ public class HttpUtil
                 InputStream inputstream = null;
                 OutputStream outputstream = null;
 
-                if (p_180192_4_ != null)
+                if (iProgressUpdate != null)
                 {
-                    p_180192_4_.resetProgressAndMessage(I18n.translateToLocal("resourcepack.downloading"));
-                    p_180192_4_.displayLoadingString(I18n.translateToLocal("resourcepack.requesting"));
+                    iProgressUpdate.resetProgressAndMessage(I18n.translateToLocal("resourcepack.downloading"));
+                    iProgressUpdate.displayLoadingString(I18n.translateToLocal("resourcepack.requesting"));
                 }
 
                 try
@@ -165,9 +165,9 @@ public class HttpUtil
                         {
                             httpurlconnection.setRequestProperty(entry.getKey(), entry.getValue());
 
-                            if (p_180192_4_ != null)
+                            if (iProgressUpdate != null)
                             {
-                                p_180192_4_.setLoadingProgress((int)(++f / f1 * 100.0F));
+                                iProgressUpdate.setLoadingProgress((int)(++f / f1 * 100.0F));
                             }
                         }
 
@@ -175,9 +175,9 @@ public class HttpUtil
                         f1 = (float)httpurlconnection.getContentLength();
                         int i = httpurlconnection.getContentLength();
 
-                        if (p_180192_4_ != null)
+                        if (iProgressUpdate != null)
                         {
-                            p_180192_4_.displayLoadingString(I18n.translateToLocalFormatted("resourcepack.progress", String.format("%.2f", f1 / 1000.0F / 1000.0F)));
+                            iProgressUpdate.displayLoadingString(I18n.translateToLocalFormatted("resourcepack.progress", String.format("%.2f", f1 / 1000.0F / 1000.0F)));
                         }
 
                         if (saveFile.exists())
@@ -186,9 +186,9 @@ public class HttpUtil
 
                             if (j == (long)i)
                             {
-                                if (p_180192_4_ != null)
+                                if (iProgressUpdate != null)
                                 {
-                                    p_180192_4_.setDoneWorking();
+                                    iProgressUpdate.setDoneWorking();
                                 }
 
                                 return;
@@ -206,9 +206,9 @@ public class HttpUtil
 
                         if (maxSize > 0 && f1 > (float)maxSize)
                         {
-                            if (p_180192_4_ != null)
+                            if (iProgressUpdate != null)
                             {
-                                p_180192_4_.setDoneWorking();
+                                iProgressUpdate.setDoneWorking();
                             }
 
                             throw new IOException("Filesize is bigger than maximum allowed (file is " + f + ", limit is " + maxSize + ")");
@@ -220,16 +220,16 @@ public class HttpUtil
                         {
                             f += (float)k;
 
-                            if (p_180192_4_ != null)
+                            if (iProgressUpdate != null)
                             {
-                                p_180192_4_.setLoadingProgress((int)(f / f1 * 100.0F));
+                                iProgressUpdate.setLoadingProgress((int)(f / f1 * 100.0F));
                             }
 
                             if (maxSize > 0 && f > (float)maxSize)
                             {
-                                if (p_180192_4_ != null)
+                                if (iProgressUpdate != null)
                                 {
-                                    p_180192_4_.setDoneWorking();
+                                    iProgressUpdate.setDoneWorking();
                                 }
 
                                 throw new IOException("Filesize was bigger than maximum allowed (got >= " + f + ", limit was " + maxSize + ")");
@@ -239,9 +239,9 @@ public class HttpUtil
                             {
                                 HttpUtil.LOGGER.error("INTERRUPTED");
 
-                                if (p_180192_4_ != null)
+                                if (iProgressUpdate != null)
                                 {
-                                    p_180192_4_.setDoneWorking();
+                                    iProgressUpdate.setDoneWorking();
                                 }
 
                                 return;
@@ -250,9 +250,9 @@ public class HttpUtil
                             outputstream.write(abyte, 0, k);
                         }
 
-                        if (p_180192_4_ != null)
+                        if (iProgressUpdate != null)
                         {
-                            p_180192_4_.setDoneWorking();
+                            iProgressUpdate.setDoneWorking();
                             return;
                         }
                     }
@@ -274,9 +274,9 @@ public class HttpUtil
                             }
                         }
 
-                        if (p_180192_4_ != null)
+                        if (iProgressUpdate != null)
                         {
-                            p_180192_4_.setDoneWorking();
+                            iProgressUpdate.setDoneWorking();
                             return;
                         }
                     }

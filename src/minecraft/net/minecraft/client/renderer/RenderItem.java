@@ -984,7 +984,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.BEETROOT, "beetroot");
         this.registerItem(Items.BEETROOT_SEEDS, "beetroot_seeds");
         this.registerItem(Items.BEETROOT_SOUP, "beetroot_soup");
-        this.registerItem(Items.field_190929_cY, "totem");
+        this.registerItem(Items.TOTEM_OF_UNDYING, "totem");
         this.registerItem(Items.POTIONITEM, "bottle_drinkable");
         this.registerItem(Items.SPLASH_POTION, "bottle_splash");
         this.registerItem(Items.LINGERING_POTION, "bottle_lingering");
@@ -1063,8 +1063,8 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.ELYTRA, "elytra");
         this.registerItem(Items.CHORUS_FRUIT, "chorus_fruit");
         this.registerItem(Items.CHORUS_FRUIT_POPPED, "chorus_fruit_popped");
-        this.registerItem(Items.field_190930_cZ, "shulker_shell");
-        this.registerItem(Items.field_191525_da, "iron_nugget");
+        this.registerItem(Items.SHULKER_SHELL, "shulker_shell");
+        this.registerItem(Items.IRON_NUGGET, "iron_nugget");
         this.registerItem(Items.RECORD_13, "record_13");
         this.registerItem(Items.RECORD_CAT, "record_cat");
         this.registerItem(Items.RECORD_BLOCKS, "record_blocks");
@@ -1079,7 +1079,7 @@ public class RenderItem implements IResourceManagerReloadListener
         this.registerItem(Items.RECORD_WAIT, "record_wait");
         this.registerItem(Items.PRISMARINE_SHARD, "prismarine_shard");
         this.registerItem(Items.PRISMARINE_CRYSTALS, "prismarine_crystals");
-        this.registerItem(Items.field_192397_db, "knowledge_book");
+        this.registerItem(Items.KNOWLEDGE_BOOK, "knowledge_book");
         this.itemModelMesher.register(Items.ENCHANTED_BOOK, new ItemMeshDefinition()
         {
             public ModelResourceLocation getModelLocation(ItemStack stack)

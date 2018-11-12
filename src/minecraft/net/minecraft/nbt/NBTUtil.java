@@ -330,9 +330,8 @@ public final class NBTUtil
         return tag;
     }
 
-    @SuppressWarnings("unchecked")
-    private static <T extends Comparable<T>> String getName(IProperty<T> p_190010_0_, Comparable<?> p_190010_1_)
+    private static <T extends Comparable<T>> String getName(IProperty<T> property, Comparable<?> p_190010_1_)
     {
-        return p_190010_0_.getName((T)p_190010_1_);
+        return property.getName((T)p_190010_1_);
     }
 }

@@ -56,7 +56,7 @@ public class EntityStray extends AbstractSkeleton
         return SoundEvents.ENTITY_STRAY_DEATH;
     }
 
-    SoundEvent func_190727_o()
+    SoundEvent getStepSound()
     {
         return SoundEvents.ENTITY_STRAY_STEP;
     }

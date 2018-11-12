@@ -239,7 +239,7 @@ public class GuiBeacon extends GuiContainer
             this.iconY = iconYIn;
         }
 
-        public void func_191745_a(Minecraft p_191745_1_, int p_191745_2_, int p_191745_3_, float p_191745_4_)
+        public void drawButton(Minecraft p_191745_1_, int p_191745_2_, int p_191745_3_, float p_191745_4_)
         {
             if (this.visible)
             {
@@ -328,7 +328,7 @@ public class GuiBeacon extends GuiContainer
 
             if (this.tier >= 3 && this.effect != MobEffects.REGENERATION)
             {
-                s = s + " II";
+                s = s + "II";
             }
 
             GuiBeacon.this.drawCreativeTabHoveringText(s, mouseX, mouseY);

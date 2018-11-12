@@ -437,7 +437,7 @@ public class ModelBakery
         this.variantNames.put(Item.getItemFromBlock(Blocks.OAK_FENCE), Lists.newArrayList("oak_fence"));
         this.variantNames.put(Items.OAK_DOOR, Lists.newArrayList("oak_door"));
         this.variantNames.put(Items.BOAT, Lists.newArrayList("oak_boat"));
-        this.variantNames.put(Items.field_190929_cY, Lists.newArrayList("totem"));
+        this.variantNames.put(Items.TOTEM_OF_UNDYING, Lists.newArrayList("totem"));
     }
 
     private List<String> getVariantNames(Item stack)

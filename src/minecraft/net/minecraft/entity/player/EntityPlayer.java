@@ -2406,7 +2406,7 @@ public abstract class EntityPlayer extends EntityLivingBase
         itextcomponent.getStyle().setClickEvent(new ClickEvent(ClickEvent.Action.SUGGEST_COMMAND, "/msg " + this.getName() + " "));
         itextcomponent.getStyle().setHoverEvent(this.getHoverEvent());
         itextcomponent.getStyle().setInsertion(this.getName());
-        return itextcomponent;
+        return itextcomponent; 
     }
 
     public float getEyeHeight()

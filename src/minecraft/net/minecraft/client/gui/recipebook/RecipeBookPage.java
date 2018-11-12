@@ -111,7 +111,7 @@ public class RecipeBookPage
 
         for (GuiButtonRecipe guibuttonrecipe : this.field_193743_h)
         {
-            guibuttonrecipe.func_191745_a(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
+            guibuttonrecipe.drawButton(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
 
             if (guibuttonrecipe.visible && guibuttonrecipe.isMouseOver())
             {
@@ -119,8 +119,8 @@ public class RecipeBookPage
             }
         }
 
-        this.field_193741_f.func_191745_a(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
-        this.field_193740_e.func_191745_a(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
+        this.field_193741_f.drawButton(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
+        this.field_193740_e.drawButton(this.field_193754_s, p_194191_3_, p_194191_4_, p_194191_5_);
         this.field_194202_c.func_191842_a(p_194191_3_, p_194191_4_, p_194191_5_);
     }
 

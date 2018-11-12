@@ -115,9 +115,9 @@ public class GuiCustomizeSkin extends GuiScreen
     {
         private final EnumPlayerModelParts playerModelParts;
 
-        private ButtonPart(int p_i45514_2_, int p_i45514_3_, int p_i45514_4_, int p_i45514_5_, int p_i45514_6_, EnumPlayerModelParts playerModelParts)
+        private ButtonPart(int buttonId, int xPos, int yPos, int widthIn, int heightIn, EnumPlayerModelParts playerModelParts)
         {
-            super(p_i45514_2_, p_i45514_3_, p_i45514_4_, p_i45514_5_, p_i45514_6_, GuiCustomizeSkin.this.getMessage(playerModelParts));
+            super(buttonId, xPos, yPos, widthIn, heightIn, GuiCustomizeSkin.this.getMessage(playerModelParts));
             this.playerModelParts = playerModelParts;
         }
     }

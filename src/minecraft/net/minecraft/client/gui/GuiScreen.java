@@ -84,7 +84,7 @@ public abstract class GuiScreen extends Gui implements GuiYesNoCallback
     {
         for (int i = 0; i < this.buttonList.size(); ++i)
         {
-            ((GuiButton)this.buttonList.get(i)).func_191745_a(this.mc, mouseX, mouseY, partialTicks);
+            ((GuiButton)this.buttonList.get(i)).drawButton(this.mc, mouseX, mouseY, partialTicks);
         }
 
         for (int j = 0; j < this.labelList.size(); ++j)

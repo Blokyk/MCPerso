@@ -39,7 +39,7 @@ public class EntitySkeleton extends AbstractSkeleton
         return SoundEvents.ENTITY_SKELETON_AMBIENT;
     }
 
-    protected SoundEvent getHurtSound(DamageSource p_184601_1_)
+    protected SoundEvent getHurtSound(DamageSource damageSource)
     {
         return SoundEvents.ENTITY_SKELETON_HURT;
     }
@@ -49,7 +49,7 @@ public class EntitySkeleton extends AbstractSkeleton
         return SoundEvents.ENTITY_SKELETON_DEATH;
     }
 
-    SoundEvent func_190727_o()
+    SoundEvent getStepSound()
     {
         return SoundEvents.ENTITY_SKELETON_STEP;
     }

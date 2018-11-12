@@ -35,7 +35,8 @@ public class BossInfoClient extends BossInfo
         return this.percent + (this.rawPercent - this.percent) * f;
     }
 
-    public void updateFromPacket(SPacketUpdateBossInfo packetIn)
+    @SuppressWarnings("incomplete-switch")
+	public void updateFromPacket(SPacketUpdateBossInfo packetIn)
     {
         switch (packetIn.getOperation())
         {

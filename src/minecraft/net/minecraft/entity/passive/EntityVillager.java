@@ -93,7 +93,7 @@ import org.apache.logging.log4j.Logger;
 
 public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 {
-    private static final Logger field_190674_bx = LogManager.getLogger();
+    private static final Logger LOGGER = LogManager.getLogger();
     private static final DataParameter<Integer> PROFESSION = EntityDataManager.<Integer>createKey(EntityVillager.class, DataSerializers.VARINT);
     private int randomTickDivider;
     private boolean isMating;
@@ -305,6 +305,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
     {
         super.entityInit();
         this.dataManager.register(PROFESSION, Integer.valueOf(0));
+    	this.addChatMessage(new TextComponentString("Hello, new villager entity initiated"));
     }
 
     public static void registerFixesVillager(DataFixer fixer)
@@ -1200,7 +1201,7 @@ public class EntityVillager extends EntityAgeable implements INpc, IMerchant
 
             if (p_i45810_2_ < p_i45810_1_)
             {
-                EntityVillager.field_190674_bx.warn("PriceRange({}, {}) invalid, {} smaller than {}", Integer.valueOf(p_i45810_1_), Integer.valueOf(p_i45810_2_), Integer.valueOf(p_i45810_2_), Integer.valueOf(p_i45810_1_));
+                EntityVillager.LOGGER.warn("PriceRange({}, {}) invalid, {} smaller than {}", Integer.valueOf(p_i45810_1_), Integer.valueOf(p_i45810_2_), Integer.valueOf(p_i45810_2_), Integer.valueOf(p_i45810_1_));
             }
         }
 

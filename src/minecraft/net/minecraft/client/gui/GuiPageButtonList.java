@@ -453,13 +453,13 @@ public class GuiPageButtonList extends GuiListExtended
             }
         }
 
-        private void func_192635_a(GuiButton p_192635_1_, int p_192635_2_, int p_192635_3_, int p_192635_4_, boolean p_192635_5_, float p_192635_6_)
+        private void func_192635_a(GuiButton guiButton, int p_192635_2_, int p_192635_3_, int p_192635_4_, boolean p_192635_5_, float p_192635_6_)
         {
-            p_192635_1_.yPosition = p_192635_2_;
+            guiButton.yPosition = p_192635_2_;
 
             if (!p_192635_5_)
             {
-                p_192635_1_.func_191745_a(this.client, p_192635_3_, p_192635_4_, p_192635_6_);
+                guiButton.drawButton(this.client, p_192635_3_, p_192635_4_, p_192635_6_);
             }
         }
 
